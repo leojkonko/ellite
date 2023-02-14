@@ -24,6 +24,7 @@
             list-style: none;
             height: 100%;
 
+
             & a {
                 color: #fff;
             }
@@ -49,5 +50,10 @@
 @media (min-width: 1600px) {
     .menu {
         margin-top: 20px;
+
+        & li {
+            height: 90% !important;
+        }
     }
+
 }

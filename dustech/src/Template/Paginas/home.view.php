@@ -1,7 +1,7 @@
 
 
 <section>
-    <img src="<?php asset('/images/backgrounds/img_principal.svg') ?>" width="100%" height="100%" alt="">
+    <img src="<?= asset('/images/backgrounds/img_principal.svg') ?>" width="100%" height="100%" alt="">
 </section>
 
 <section class="produtos-destaques py-2 py-lg-4">
