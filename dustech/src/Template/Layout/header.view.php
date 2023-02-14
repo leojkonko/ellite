@@ -28,7 +28,8 @@
     <meta name="msapplication-TileImage" content="<?= asset('images/favicons/ms-icon-144x144.png') ?>">
     <meta name="theme-color" content="#ffffff">
 
-    <title><?= !empty($title) ? $title . " | Projeto Padrão" : "Projeto Padrão" ?></title>
+    <!--<title><?= !empty($title) ? $title . " | Projeto Padrão" : "Projeto Padrão" ?></title>-->
+    <title>Dustech</title>
 
     <?php /* ==== Stylesheets ==== */ ?>
     <link rel="stylesheet" href="<?= asset('css/bootstrap.css') ?>"> <?php /* ==== Arquivo do bootstrap ==== */ ?>
@@ -42,10 +43,14 @@
     /* ==== Arquivo para o pessoal do back end ==== 
     <link rel="stylesheet" href="webroot/site/dist/css/custom.css"> 
     */ ?>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+<!--
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+-->
     
 </head>
 
@@ -143,32 +148,7 @@
                     <div class="col-lg-12 d-flex justify-content-center logo">
                         <img src="../../../../webroot/site/src/images/logos/logo.svg" width="45%" alt="">
                     </div>
-                    <div class="d-flex col-lg-12 justify-content-center">
-                        <ul class="infos redes d-flex">
-                            <li><a href="">
-                                    <img src="../../../../webroot/site/src/images/icones/facebook.svg" width="50%"
-                                        alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="../../../../webroot/site/src/images/icones/instagram.svg" width="50%"
-                                        alt="">
-                                </a>
-                            </li>
-                            <li><a href="">
-                                    <img src="../../../../webroot/site/src/images/icones/youtube.svg" width="50%"
-                                        alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="../../../../webroot/site/src/images/icones/linkedin.svg" width="50%"
-                                        alt="">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                    
                 </div>
 
             </ul>

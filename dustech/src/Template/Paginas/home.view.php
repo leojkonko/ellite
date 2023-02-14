@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
-</head>
-<body>
+
 
 <section>
-    <img src="../../../../webroot/site/src/images/backgrounds/img_principal.svg" width="100%" height="100%" alt="">
+    <img src="<?php asset('/images/backgrounds/img_principal.svg') ?>" width="100%" height="100%" alt="">
 </section>
 
 <section class="produtos-destaques py-2 py-lg-4">
@@ -25,26 +14,20 @@
                 <div class="col-md-10 col-sm-12">
                     <div class="swiper produtos-destaque-swiper">
                         <div class="swiper-wrapper">
-
-                            <?php
-                            $cards = [
-                                asset('images/banners/card1.svg'),
-                                asset('images/banners/card2.svg'),
-                                asset('images/banners/card3.svg'),
-                                asset('images/banners/card4.svg'),
-                            ]
-                            ?>
-
                             <?php foreach(range(0,9) as $i) : ?>
                                 <div class="swiper-slide h-100">
                                     <div class="slide-img">
+                                    <a href="http://google.com.br">
                                         <div class="cor">
                                             <span>Cor Sólida</span>
                                         </div>
-                                        <img src="<?= asset('images/banners/card1.svg') ?>" alt="">
+                                        
+                                            <img src="<?= asset('images/banners/card1.svg') ?>" alt="">
+                                        
                                         <div class="span bg-white">
                                             <span>A001</span>
                                         </div>
+                                        </a>
                                     </div>
                                 </div>
                             <?php endforeach; ?>
@@ -59,7 +42,7 @@
     <section class="section-treinamento">
         <div class="row coluna">
             <div class=" col-md-6 col-sm-6 col-12">
-                <img src="<?= asset('images/banners/pistola.png') ?>" width="90%" alt="">
+                <img class="pistola" src="<?= asset('images/banners/pistola.png') ?>" width="90%" alt="">
             </div>
             <div class="col-md-6 col-sm-6 col-12 text-primary text-consultoria">
                 <div class="d-flex justify-content-start div-h2">
@@ -85,7 +68,7 @@
                             </div>
                             <div class="col-md-12 d-flex">
                                 <button class="btn btn-black button1"></button>
-                                <button class="btn btn-black button2"><i class="fa fa-download"></i></button>
+                                <button class="btn btn-black button2"><i class="ml-5 fa fa-download"></i></button>
                             </div>
                         </div>
                     </div>
@@ -196,14 +179,14 @@
     <!-- Swiper -->
     <div class="container">
         <div class="swiper mySwiper-banner col-10">
-        <div class="swiper-wrapper">
+            <div class="swiper-wrapper">
 
         <?php foreach(range(0,9) as $i) : ?>
             <div class="swiper-slide">
                 <img class="logo-banner" src="<?= asset('images/logos/logo-banner.svg') ?>" width="70%" alt="">
             </div>
             <?php endforeach; ?>
-            </div>
+        </div>
 
             
         </div>

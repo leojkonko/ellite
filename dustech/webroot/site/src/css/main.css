@@ -170,6 +170,11 @@
     display: none;
   }
 }
+@media (min-width: 1600px) {
+  .menu {
+    margin-top: 20px;
+  }
+}
 .footer {
   background-image: url(../../../../webroot/site/src/images/backgrounds/footer.svg);
   background-repeat: no-repeat;
@@ -232,6 +237,14 @@
     height: 500px;
   }
 }
+/*
+- No sass, no lugar de @media, existe um mixin do proprio bootstrap: 
+@include media-breakpoint-up(lg) - Maior que LG ou 992px
+@include media-breakpoint-down(lg) - Menor que LG ou 992px
+@include media-breakpoint-between(sm, lg) - Entre SM (580px) e LG (992px)
+@include media-hover - Fará o hover no lugar de utilizar .classe:hover (tambem será acima de 992px, ou seja, quando nao for mobile (pois no mobile
+não existe hover))
+*/
 .produtos-destaques {
   background: linear-gradient(180deg, #202020 0%, #0D0D0D 100%);
   color: white;
@@ -574,7 +587,7 @@
     background-repeat: no-repeat;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1500px) {
   .text-consultoria {
     margin-bottom: 50px;
   }
@@ -591,9 +604,57 @@
     background-repeat: no-repeat;
     height: 100%;
   }
+  .coluna .pistola {
+    width: cover !important;
+  }
+}
+@media (min-width: 1501px) and (max-width: 1600px) {
+  .text-consultoria {
+    margin-bottom: 50px;
+  }
+  .text-consultoria img {
+    padding-top: 10px;
+  }
+  .text-consultoria .div-button {
+    padding-top: 100px;
+    margin-left: 100px;
+  }
+  .coluna {
+    background-image: url(../../../../webroot/site/src/images/backgrounds/bg-red.svg);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+  .coluna .pistola {
+    width: cover !important;
+  }
+}
+@media (min-width: 1601px) and (max-width: 1980px) {
+  .text-consultoria {
+    margin-bottom: 50px;
+  }
+  .text-consultoria img {
+    padding-top: 10px;
+  }
+  .text-consultoria .div-button {
+    padding-top: 100px;
+    margin-left: 100px;
+  }
+  .coluna {
+    background-image: url(../../../../webroot/site/src/images/backgrounds/bg-red.svg);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+  .coluna .pistola {
+    width: 32% !important;
+  }
 }
 .catalogo .div-catalogo button {
   margin-right: 20px;
+}
+.catalogo .div-catalogo button i {
+  margin-left: 10px;
 }
 .catalogo .div-catalogo div {
   margin-top: -30px;
@@ -816,9 +877,9 @@
   .catalogo .div-catalogo div h2 {
     font-size: 42px;
   }
-  .catalogo .img-bg {
+  .catalogo {
     background-image: url(../../../../webroot/site/src/images/backgrounds/banner-catalogo.svg);
-    background-size: 50%;
+    background-size: cover;
     background-repeat: no-repeat;
     color: white;
   }
@@ -965,19 +1026,9 @@
     width: 90%;
   }
 }
-@media (min-width: 1200px) {
-  .diferenciais .swiper-diferenciais,
-.swiper-button-next,
-.swiper-button-prev {
-    display: none;
-  }
-  .swiper-diferenciais {
-    overflow-x: hidden;
-  }
-}
-@media (min-width: 1600px) and (max-width: 1900px) {
+@media (min-width: 1600px) and (max-width: 1981px) {
   .icones p {
-    width: 60% !important;
+    width: 54% !important;
   }
 }
 .banner .container {

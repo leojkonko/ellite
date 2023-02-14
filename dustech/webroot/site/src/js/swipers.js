@@ -22,24 +22,25 @@ var swiper = new Swiper(".produtos-destaque-swiper", {
 var swiper = new Swiper(".swiper-diferenciais", {
     slidesPerView: 1,
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-diferenciais .swiper-button-next",
+        prevEl: ".swiper-diferenciais .swiper-button-prev",
     },
 
 });
 
+/*
 var swiper = new Swiper(".mySwiper-teste", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
 });
-
+*/
 
 var swiper = new Swiper(".mySwiper-banner", {
     slidesPerView: 6,
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".banner .swiper-button-next",
+        prevEl: ".banner .swiper-button-prev",
     },
 });

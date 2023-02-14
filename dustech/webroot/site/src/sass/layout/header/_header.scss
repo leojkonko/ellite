@@ -44,6 +44,10 @@
     .menu {
         display: none;
     }
+}
 
-
+@media (min-width: 1600px) {
+    .menu {
+        margin-top: 20px;
+    }
 }
