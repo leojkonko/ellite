@@ -2886,44 +2886,50 @@ textarea.form-control-lg {
 }
 
 .dropdown-button {
-  border: none;
   cursor: pointer;
   background-color: transparent;
   color: white;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 1px;
+  font-size: 14px;
+  border: none;
+  display: flex;
+  height: 100%;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   z-index: 1;
-  margin-top: 38px;
   background-color: black;
-  width: 130%;
+  width: 100%;
   background-image: url(../../../../../../webroot/site/src/images/backgrounds/img_second.svg);
   background: rgba(32, 32, 32, 0.5);
   backdrop-filter: blur(12.5px);
-  border-top: 5px solid #C44438;
+  border-top: 4px solid #C44438;
 }
 
 .dropdown-content li {
-  display: block;
-  margin: 10px -50px;
-  padding: 0px 0px;
-  width: 100%;
-  padding: 10px;
   width: 100%;
   margin-left: -16px;
   color: white;
 }
 
 .dropdown-content a {
-  margin: 0px -40px;
-  width: 100%;
+  display: flex;
+  width: 300%;
+  margin-left: -40px;
+  margin-top: -30px;
 }
 
 .dropdown-content li a:hover {
-  border-bottom: 3px solid #C44438 !important;
-  padding-bottom: 0px !important;
+  color: #C44438 !important;
+}
+
+.dropdown-content li:hover {
+  border: none !important;
 }
 
 .dropdown-button:focus + .dropdown-content {
@@ -3715,9 +3721,7 @@ textarea.form-control-lg {
   height: 1em;
   padding: 0.25em 0.25em;
   color: #000;
-  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
   border: 0;
-  border-radius: 0.25rem;
   opacity: 0.5;
 }
 .btn-close:hover {
@@ -4164,8 +4168,10 @@ textarea.form-control-lg {
 }
 .offcanvas-header .btn-close {
   display: flex;
-  padding: 10px 15px;
-  margin-top: -14px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-top: -15px;
   margin-left: -16px;
   background-color: rgba(255, 255, 255, 0.2);
   text-decoration-color: white;
@@ -4201,30 +4207,52 @@ textarea.form-control-lg {
   transform: translateX(100%);
 }
 .offcanvas-end ul {
-  margin: 0px -15px;
-  display: flex;
-  justify-content: start;
+  margin-right: 20px;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  margin-left: 0px;
+}
+.offcanvas-end ul .row {
+  margin-left: -40px;
 }
 .offcanvas-end ul .busca {
-  margin-left: -30px;
   color: white;
 }
+.offcanvas-end ul .busca p {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 100;
+  line-height: 1px;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
 .offcanvas-end ul .busca h2, .offcanvas-end ul .busca .h2 {
-  margin-left: 0px;
+  font-size: 28px;
 }
 .offcanvas-end ul .busca input {
   background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: none !important;
+  color: white;
+  width: 95%;
+}
+.offcanvas-end ul .busca input::placeholder {
+  color: white;
+  font-size: 14px !important;
 }
 .offcanvas-end ul .buttons {
-  margin-left: -30px;
   display: flex;
 }
-.offcanvas-end ul .buttons button {
-  margin: 0px 5px;
+.offcanvas-end ul .buttons .button-cor {
+  margin-right: 22px;
+  font-size: 14px;
 }
-.offcanvas-end ul .img-cards img {
-  margin-left: -70px;
+.offcanvas-end .logo {
+  margin-top: 100px;
+}
+.offcanvas-end .infos {
+  list-style-type: none;
+}
+.offcanvas-end .infos li a {
+  margin: 0px 5px;
 }
 
 .offcanvas-top {

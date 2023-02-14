@@ -2,20 +2,42 @@
 .produtos-destaques {
     background: linear-gradient(180deg, #202020 0%, #0D0D0D 100%);
     color: white;
-    font-family: 'Archivo', sans-serif;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 48px;
-    line-height: 100%;
-    /* or 48px */
-
     padding: 50px 0px;
     color: #FFFFFF;
+
+    & .texto {
+        & h2 {
+            font-family: 'Archivo' !important,
+                sans-serif;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 34px;
+            line-height: 100%;
+        }
+
+        & button {
+            margin-top: 20px;
+        }
+    }
 
     & .swiper {
         width: 100%;
         margin: 5px;
         margin-top: -150px;
+
+        & .swiper-button-next,
+        .swiper-button-prev {
+            color: #C44438;
+            margin-top: 10px;
+        }
+
+        & .swiper-button-next:after,
+        .swiper-button-prev:after {
+
+            font-size: 30px;
+
+        }
+
 
         .swiper-slide {
             text-align: center;
@@ -25,12 +47,20 @@
             color: white;
             padding-top: 50px;
 
+
+
             & img {
                 display: block;
                 object-fit: cover;
-                border: 9px solid white;
+                border: 8px solid white;
                 border-radius: 10px;
                 width: 180px;
+            }
+
+            & .slide-img {
+                transition: margin-top 0.3s ease-in-out 0s;
+                margin-top: 0px;
+
             }
 
             & .slide-img:hover {
@@ -38,18 +68,26 @@
             }
 
             & .span {
-                margin-top: -48px;
+                margin-top: -40px;
                 position: absolute;
                 color: black;
-                width: 90px;
+                width: 80px;
+                height: 40px;
                 font-weight: 700;
-                border-radius: 10px;
+                border-radius: 8px;
+
+                & span {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 5px;
+                }
             }
 
             & .cor {
                 position: absolute;
                 color: white;
-                margin: 10px 0px 0px 10px;
+                margin: 20px 0px 0px 10px;
                 padding: 0px 15px;
                 font-size: 14px;
 
@@ -59,6 +97,7 @@
                     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                     border-radius: 3px;
                     padding: 5px;
+                    font-size: 12px;
                 }
             }
         }
@@ -215,7 +254,7 @@
                     font-family: 'Archivo';
                     font-style: normal;
                     font-weight: 100;
-                    font-size: 52px;
+                    font-size: 45px;
                     color: white;
 
                     & span {
@@ -428,6 +467,10 @@
 
 // ------------------------------------------------------------------------------------section catalogo
 .catalogo {
+
+
+    & .container {}
+
     & .div-catalogo {
         & button {
             margin-right: 20px;
@@ -437,9 +480,11 @@
             margin-top: -30px;
 
             & h2 {
-                font-family: 'Archivo';
+                font-family: 'Archivo', sans-serif;
                 font-style: normal;
-                font-weight: 200;
+                font-weight: 100;
+                font-size: 48px;
+
             }
         }
     }
@@ -657,6 +702,7 @@
         height: 100%;
         margin-top: 100px;
         margin-bottom: 50px;
+        font-size: 3px !important;
     }
 
     .catalogo .div-catalogo div h2 {
@@ -667,8 +713,11 @@
         background-image: url(../../../../webroot/site/src/images/backgrounds/banner-catalogo.svg);
         background-size: cover;
         background-repeat: no-repeat;
-        height: 275px;
+        //height: 275px;
+        height: 100%;
         color: white;
+        padding: 40px 0px;
+
 
     }
 
@@ -689,14 +738,19 @@
     .catalogo .div-catalogo div .button2::before {
         content: "Baixe a versão digital";
     }
+
+    .catalogo .div-catalogo div .button2 i {
+        padding-left: 10px;
+    }
 }
 
 @media (min-width: 1401px) {
+
+
     .div-catalogo {
         height: 100%;
         margin-top: 140px;
         margin-bottom: 50px;
-
     }
 
     .catalogo .div-catalogo div h2 {
@@ -706,7 +760,7 @@
     .catalogo {
         & .img-bg {
             background-image: url(../../../../webroot/site/src/images/backgrounds/banner-catalogo.svg);
-            background-size: cover;
+            background-size: 50%;
             background-repeat: no-repeat;
             color: white;
         }
@@ -738,32 +792,7 @@
 
 
 // ----------------------------------------------------------------------section diferenciais
-/*
-.diferenciais .icones:hover {
-    margin-top: -30px;
-    color: #C44438;
-    background: linear-gradient(180deg, #2E2E2E 0%, rgba(46, 46, 46, 0) 100%, #202020 100%);
-    filter: drop-shadow(0px 45px 45px rgba(0, 0, 0, 0.35));
-    border-radius: 10px;
-}
 
-.diferenciais .icones img:hover h2 {}
-@include media-hover {
-    .titulo {
-        color: red;
-    }
-
-    .icone {
-        transform: translateY(-10%);
-
-        &-wrapper {
-            background-color: darken($gray-900, 5);
-            border: 0;
-            transform: translateY(-10%);
-            box-shadow: 0px 5px 15px $black;
-        }
-    }
-}*/
 
 .diferenciais {
     background: linear-gradient(180deg, #202020 0%, #0D0D0D 100%);
@@ -791,29 +820,32 @@
         & h2 {
             font-family: 'Archivo';
             font-style: normal;
-            font-weight: 500;
-            font-size: 28px;
+            font-weight: 400;
+            font-size: 25px;
             line-height: 130%;
             padding: 0px 20px;
+            margin-left: -70px;
         }
 
         & p {
             font-family: 'Archivo';
             font-style: normal;
             font-weight: 100;
-            font-size: 18px;
+            font-size: 16px;
             line-height: 130%;
             padding: 0px 20px;
             color: rgba(255, 255, 255, 0.8);
+            margin-left: -85px;
+            width: 80%;
         }
     }
 
-    //---------baner
-    & swiper-container {
+    //---------banner
+    & .swiper-diferenciais {
         width: 100%;
         height: 100%;
 
-        & swiper-slide {
+        & .swiper-slide {
             text-align: center;
             font-size: 18px;
             background: linear-gradient(180deg, #202020 0%, #0D0D0D 100%) !important;
@@ -859,7 +891,9 @@
         display: none;
     }
 
-    .diferenciais swiper-container {
+    .diferenciais .swiper-diferenciais,
+    .swiper-button-next,
+    .swiper-button-prev {
         display: block;
     }
 
@@ -873,7 +907,9 @@
         display: none;
     }
 
-    .diferenciais swiper-container {
+    .diferenciais .swiper-diferenciais,
+    .swiper-button-next,
+    .swiper-button-prev {
         display: block;
     }
 
@@ -887,13 +923,23 @@
         display: none;
     }
 
-    .diferenciais swiper-container {
+    .diferenciais .swiper-diferenciais,
+    .swiper-button-next,
+    .swiper-button-prev {
         display: block;
     }
+
+    /*.swiper-button-next {
+        border: 1px solid red;
+        margin-top: 500px;
+    }*/
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .diferenciais swiper-container {
+
+    .diferenciais .swiper-diferenciais,
+    .swiper-button-next,
+    .swiper-button-prev {
         display: none;
     }
 
@@ -903,51 +949,62 @@
 }
 
 @media (min-width: 1200px) {
-    .diferenciais swiper-container {
+
+    .diferenciais .swiper-diferenciais,
+    .swiper-button-next,
+    .swiper-button-prev {
         display: none;
+    }
+
+    .swiper-diferenciais {
+        overflow-x: hidden;
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 1900px) {
+
+    .icones p {
+        width: 60% !important;
     }
 }
 
 // section banner -----------------------------------------------------------------------------
 
 .banner {
-    height: 100px;
+    & .container {
+        position: relative;
 
-    & swiper-container {
-        width: 100%;
-        height: 100%;
+        & .mySwiper-banner {
+            position: initial;
 
+            & .swiper-slide {
+                text-align: center;
+                background: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
-        & swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            & img {
-                display: block;
-                width: 60%;
-                margin: 0px 20px;
-                object-fit: cover;
-            }
-
-            & .row {
-                @media (max-width: 575.98px) {
-                    & .logo1 {
-                        display: flex;
-                    }
-
-                    & .logo2,
-                    .logo3,
-                    .logo4,
-                    .logo5,
-                    .logo6 {
-                        display: none;
-                    }
+                & .logo-banner {
+                    display: block;
+                    object-fit: cover;
+                    margin: 55px 0px;
                 }
+
             }
+
+
+
         }
+
+
+
+        & .swiper-button-next:after,
+        .swiper-button-prev:after {
+            color: black;
+
+            font-size: 20px;
+
+        }
+
     }
 }

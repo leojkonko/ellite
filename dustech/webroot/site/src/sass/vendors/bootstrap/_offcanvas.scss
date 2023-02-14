@@ -29,8 +29,10 @@
 
   .btn-close {
     display: flex;
-    padding: 10px 15px;
-    margin-top: -14px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: -15px;
     margin-left: -16px;
     background-color: rgba(255, 255, 255, 0.2);
     text-decoration-color: white;
@@ -67,35 +69,65 @@
   transform: translateX(100%);
 
   & ul {
-    margin: 0px -15px;
-    display: flex;
-    justify-content: start;
+    margin-right: 20px;
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    margin-left: 0px;
+
+    & .row {
+      margin-left: -40px;
+    }
 
     & .busca {
-      margin-left: -30px;
       color: white;
 
+      & p {
+        color: rgba(255, 255, 255, 0.6);
+        font-weight: 100;
+        line-height: 1px;
+        font-size: 14px;
+        margin-bottom: 40px;
+      }
+
       & h2 {
-        margin-left: 0px;
+        font-size: 28px;
       }
 
       & input {
         background: rgba(255, 255, 255, 0.2);
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        border: none !important;
+        color: white;
+        width: 95%;
+
+        &::placeholder {
+          color: white;
+          font-size: 14px !important;
+        }
       }
     }
 
     & .buttons {
-      margin-left: -30px;
       display: flex;
 
-      & button {
-        margin: 0px 5px;
+      & .button-cor {
+        margin-right: 22px;
+        font-size: 14px;
       }
     }
+  }
 
-    & .img-cards img {
-      margin-left: -70px;
+  & .logo {
+    margin-top: 100px;
+
+  }
+
+  & .infos {
+    list-style-type: none;
+
+
+    & li a {
+
+      margin: 0px 5px;
     }
   }
 }
