@@ -7,11 +7,15 @@
 <section class="produtos-destaques py-2 py-lg-4">
         <div class="container">
             <div class="row">
-                <div class="col-md-2 col-sm-12 texto">
-                    <h2>Produtos Destaques</h2>
-                    <button class="btn btn-custom">Veja Todos</button>
+                <div class="col-lg-2 col-md-12 col-sm-12 texto">
+                    <div>
+                        <h2>Produtos Destaques</h2>
+                    </div>
+                    <div>
+                        <button class="btn btn-custom">Veja Todos</button>
+                    </div>
                 </div>
-                <div class="col-md-10 col-sm-12">
+                <div class="col-lg-10 col-md-12 col-sm-12">
                     <div class="swiper produtos-destaque-swiper">
                         <div class="swiper-wrapper">
                             <?php foreach(range(0,9) as $i) : ?>

@@ -61,14 +61,19 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-8 col-sm-6 col-7 logo">
-                <a href="/" class=""><img src="../../../../webroot/site/src/images/logos/logo.svg" width="70%"
+                <a href="/" class=""><img src="<?= asset('/images/logos/logo.svg') ?>" width="70%"
                         alt=""></a>
             </div>
             <div class="col-lg-8 col-md-1 col-sm-1 col-2 d-flex justify-content-center align-items-center menu-div">
                 <ul class="d-flex align-items-center menu d-lg-flex d-md-none d-sm-none d-xs-none ">
                     <li><a href="/">Empresa</a></li>
                     <li class="dropdown">
-                        <button class="dropdown-button">Produtos &#x02C7</button>
+                        <button class="dropdown-button">Produtos
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 flecha">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25L12 21m0 0l-3.75-3.75M12 21V3" />
+                        </svg> 
+                        
+                        </button>
                         <ul class="dropdown-content">
                             <li href="#"><a href="">Cores sólidas</a></li>
                             <li href="#"><a href="">Cores metálicas</a></li>
@@ -91,7 +96,7 @@
             <div class="col-lg-1 col-md-2 col-sm-1 col-2 d-flex align-items-center div-menulateral">
                 <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                     aria-controls="offcanvasRight">
-                    <img src="../../../../webroot/site/src/images/icones/lupa.svg" width="100%" alt="">
+                    <img src="<?= asset('/images/icones/lupa.svg') ?>" width="100%" alt="">
                 </button>
             </div>
         </div>
@@ -131,7 +136,7 @@
             <ul class="lista justify-content-center d-flex" id="menu">
                 <div class="row">
                     <div class="col-lg-12 d-flex justify-content-center img-cards">
-                        <img src="../../../../webroot/site/src/images/banners/cards-menu.svg" width="80%" alt="">
+                        <img src="<?= asset('/images/banners/cards-menu.svg') ?>" width="80%" alt="">
                     </div>
                     <div class="col-lg-12 busca">
                         <h2 class="busca ">Busca</h2>
@@ -142,11 +147,11 @@
                         <button class="btn btn-light text-dark button-cor">Cor sólida</button>
                         <button class="btn  btn-outline-light button-cor">Cor metálica</button>
                         <button class="btn btn-custom"><img
-                                src="../../../../webroot/site/src/images/icones/lupa-pequena.svg" width="16px"
+                                src="<?= asset('/images/icones/lupa-pequena.svg') ?>" width="16px"
                                 alt=""></button>
                     </div>
                     <div class="col-lg-12 d-flex justify-content-center logo">
-                        <img src="../../../../webroot/site/src/images/logos/logo.svg" width="45%" alt="">
+                        <img src="<?= asset('/images/logos/logo.svg') ?>" width="45%" alt="">
                     </div>
                     
                 </div>

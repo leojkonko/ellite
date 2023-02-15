@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-md-3 col-sm-12 d-flex align-items-center justify-content-center logo-footer">
-                    <img src="../../../../webroot/site/src/images/logos/logo.svg" alt="">
+                    <img src="<?= asset('/images/logos/logo.svg') ?>" alt="">
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6 col-6 d-flex align-items-center justify-content-center">
                     <ul class="links-site">
@@ -20,20 +20,20 @@
                     <ul class="infos">
                         <li>
                             <a href="">
-                                <img src="../../../../webroot/site/src/images/icones/localizacao.svg" alt="">
+                                <img src="<?= asset('/images/icones/localizacao.svg') ?>" alt="">
                             BR 470, Km222 | Pavilhão 1 - Garibaldina, Garibaldi - RS, 95720-000
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="../../../../webroot/site/src/images/icones/telefone.svg" alt="">
+                                <img src="<?= asset('/images/icones/telefone.svg') ?>" alt="">
                             +55
                             (54) 3698-6555
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                 <img src="../../../../webroot/site/src/images/icones/email.svg" alt="">
+                                 <img src="<?= asset('/images/icones/email.svg') ?>" alt="">
                                contato@dustech.com.br
                                 </a>
                             </li>
@@ -41,13 +41,13 @@
                 </div>
                 <div class="col-lg-1 col-md-1 col-sm-2 col-xs-6 col-6 d-flex align-items-center justify-content-center">
                     <ul class="infos redes">
-                        <li><a href=""><img src="../../../../webroot/site/src/images/icones/facebook.svg" alt=""></a>
+                        <li><a href=""><img src="<?= asset('/images/icones/facebook.svg') ?>"alt=""></a>
                         </li>
-                        <li><a href=""><img src="../../../../webroot/site/src/images/icones/instagram.svg" alt=""></a>
+                        <li><a href=""><img src="<?= asset('/images/icones/instagram.svg') ?>" alt=""></a>
                         </li>
-                        <li><a href=""><img src="../../../../webroot/site/src/images/icones/youtube.svg" alt=""></a>
+                        <li><a href=""><img src="<?= asset('/images/icones/youtube.svg') ?>"alt=""></a>
                         </li>
-                        <li><a href=""><img src="../../../../webroot/site/src/images/icones/linkedin.svg" alt=""></a>
+                        <li><a href=""><img src="<?= asset('/images/icones/linkedin.svg') ?>"alt=""></a>
                         </li>
                     </ul>
                 </div>

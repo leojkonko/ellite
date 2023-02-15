@@ -10,6 +10,8 @@
     position: absolute;
     width: 100%;
 
+
+
     & .logo {
         padding: 20px 0px;
     }
@@ -23,6 +25,12 @@
             padding: 50px 30px 0px 30px;
             list-style: none;
             height: 100%;
+
+
+            & .flecha {
+                width: 20px !important;
+                margin-top: -10px;
+            }
 
 
             & a {

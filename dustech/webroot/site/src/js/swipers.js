@@ -5,7 +5,7 @@
  */
 
 var swiper = new Swiper(".produtos-destaque-swiper", {
-    slidesPerView: 4,
+    slidesPerView: 2,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -13,6 +13,9 @@ var swiper = new Swiper(".produtos-destaque-swiper", {
     breakpoints: {
         992: {
             slidesPerView: 4,
+        },
+        767: {
+            slidesPerView: 3,
         },
     }
 
