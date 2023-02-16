@@ -10,8 +10,6 @@
     position: absolute;
     width: 100%;
 
-
-
     & .logo {
         padding: 20px 0px;
     }
@@ -22,19 +20,29 @@
         height: 115%;
 
         & li {
-            padding: 50px 30px 0px 30px;
+            display: flex;
+            justify-content: center;
+
             list-style: none;
             height: 100%;
 
 
             & .flecha {
-                width: 20px !important;
-                margin-top: -10px;
+                width: 15px !important;
+                margin-top: -7px;
+            }
+
+            & button {
+                margin-top: 50px;
+                padding: 0px 30px;
             }
 
 
             & a {
                 color: #fff;
+                padding: 0px 30px;
+                padding-top: 50px;
+                height: 100%;
             }
 
             & a:hover {
@@ -47,7 +55,85 @@
             border-bottom: 4px solid #C44438;
         }
     }
+
+    & .container {
+        position: initial;
+
+        @include media-breakpoint-between(lg, xg) {
+            & .div-menulateral {
+                justify-content: end;
+            }
+
+            & .menu-div {
+                justify-content: end;
+            }
+
+            & div .logo {
+                padding-left: 0px;
+                width: 25% !important;
+
+            }
+        }
+
+        @include media-breakpoint-between(md, lg) {
+            & .div-menulateral {
+                display: flex;
+                justify-content: end;
+            }
+
+            & .menu-div {
+                display: flex;
+                justify-content: end;
+            }
+
+            & div .logo {
+                padding-left: 0px;
+                width: 45%;
+            }
+        }
+
+        @include media-breakpoint-between(sm, md) {
+            & .div-menulateral {
+                display: flex;
+                justify-content: end;
+            }
+
+            & .menu-div {
+                display: flex;
+                justify-content: end;
+            }
+
+            & div .logo {
+                padding-left: 0px;
+                width: 45%;
+            }
+        }
+
+        @include media-breakpoint-between(350px, 400px) {
+            & .div-menulateral {
+                display: flex;
+                justify-content: start;
+            }
+
+            & .menu-div {
+                display: flex;
+                justify-content: end;
+            }
+
+            & div .logo {
+                padding-left: 30px;
+                width: 50%;
+            }
+        }
+    }
 }
+
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
 
 @media (max-width: 575.98px) {
     .menu {
@@ -55,12 +141,13 @@
     }
 }
 
+
 @media (min-width: 1600px) {
     .menu {
         margin-top: 20px;
 
         & li {
-            height: 90% !important;
+            height: 85% !important;
         }
     }
 

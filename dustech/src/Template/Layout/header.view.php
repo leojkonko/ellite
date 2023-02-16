@@ -47,8 +47,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
 <!--
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">    
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 -->
     
@@ -57,22 +57,21 @@
 <body>
 
     <?php ob_start() ?>
-    <header class="header">
+<header class="header">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-8 col-sm-6 col-7 logo">
+            <div class="col-lg-3 col-xl-3 col-md-3 col-sm-3 col-3 logo">
                 <a href="/" class=""><img src="<?= asset('/images/logos/logo.svg') ?>" width="70%"
                         alt=""></a>
             </div>
-            <div class="col-lg-8 col-md-1 col-sm-1 col-2 d-flex justify-content-center align-items-center menu-div">
+            <div class="col-lg-8 col-xl-8 col-md-4 col-sm-4 col-3 d-flex justify-content-center align-items-center menu-div">
                 <ul class="d-flex align-items-center menu d-lg-flex d-md-none d-sm-none d-xs-none ">
                     <li><a href="/">Empresa</a></li>
                     <li class="dropdown">
                         <button class="dropdown-button">Produtos
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 flecha">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25L12 21m0 0l-3.75-3.75M12 21V3" />
-                        </svg> 
-                        
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flecha w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
                         </button>
                         <ul class="dropdown-content">
                             <li href="#"><a href="">Cores sólidas</a></li>
@@ -81,7 +80,7 @@
                     </li>
                     <li><a href="/">Treinamento</a></li>
                     <li><a href="/">Blog</a></li>
-                    <li><a href="/">Contato</a></li>
+                    <li><a href="/">Contato</a></li>    
                 </ul>
                 <button class="btn d-lg-none d-xl-none d-md-flex d-sm-flex d-xs-flex " type="button"
                     data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
@@ -93,7 +92,7 @@
                 </button>
             </div>
 
-            <div class="col-lg-1 col-md-2 col-sm-1 col-2 d-flex align-items-center div-menulateral">
+            <div class="col-lg-1 col-xl-1 col-md-2 col-sm-2 col-3 d-flex align-items-center div-menulateral">
                 <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                     aria-controls="offcanvasRight">
                     <img src="<?= asset('/images/icones/lupa.svg') ?>" width="100%" alt="">

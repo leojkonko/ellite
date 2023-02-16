@@ -70,12 +70,14 @@
 
   & ul {
     margin-right: 20px;
-    font-family: 'Archivo', sans-serif;
+    font-family: 'Archivo',
+      sans-serif;
     font-style: normal;
     margin-left: 0px;
 
     & .row {
       margin-left: -40px;
+
     }
 
     & .busca {
@@ -99,6 +101,10 @@
         color: white;
         width: 95%;
 
+        @include media-breakpoint-between(350px, 400px) {
+          width: 95%;
+        }
+
         &::placeholder {
           color: white;
           font-size: 14px !important;
@@ -110,7 +116,13 @@
       display: flex;
 
       & .button-cor {
-        margin-right: 22px;
+        @include media-breakpoint-between(350px, 400px) {
+
+          margin-right: 10px;
+          font-size: 12px;
+        }
+
+        margin-right: 23px;
         font-size: 14px;
       }
     }

@@ -5,7 +5,7 @@
                 <div class="col-lg-5 col-md-3 col-sm-12 d-flex align-items-center justify-content-center logo-footer">
                     <img src="<?= asset('/images/logos/logo.svg') ?>" alt="">
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6 col-6 d-flex align-items-center justify-content-center">
+                <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 col-12 d-flex align-items-center justify-content-center">
                     <ul class="links-site">
                         <li><a href="">Empresa</a></li>
                         <li><a href="">Cores sólidas</a></li>
@@ -16,7 +16,7 @@
                     </ul>
                 </div>
                 <div
-                    class="col-lg-4 col-md-4 col-sm-6 col-xs-6 col-12 d-flex align-items-center justify-content-center">
+                    class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 d-flex align-items-center justify-content-center">
                     <ul class="infos">
                         <li>
                             <a href="">
@@ -39,7 +39,7 @@
                             </li>
                     </ul>
                 </div>
-                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-6 col-6 d-flex align-items-center justify-content-center">
+                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-12 col-12 d-flex align-items-center justify-content-center">
                     <ul class="infos redes">
                         <li><a href=""><img src="<?= asset('/images/icones/facebook.svg') ?>"alt=""></a>
                         </li>
@@ -51,6 +51,17 @@
                         </li>
                     </ul>
                 </div>
+            </div>
+        </div>
+        <div class="row copyright">
+            <div class="col-lg-8 col-md-12 col-12  d-flex justify-content-center direitos">
+                Copyright @ <?= date('Y') ?> Dustech Premium Powder Coating. Todos os direitos reservados. CNPJ 00.000.000/0000-00
+            </div>
+            <div class="col-lg-2 col-md-6 politica col-sm-4 col-3">
+                <a href="">Política de privacidade</a>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-4 logo-ellite col-3">
+                <img src="<?= asset('/images/logos/logo-ellite.svg') ?>" alt="">
             </div>
         </div>
     </div>

@@ -38,6 +38,7 @@
                         </div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination swiper-pagination1 d-xs-flex d-sm-none d-md-none d-lg-none"></div>
                     </div>
                 </div>
             </div>
@@ -45,10 +46,10 @@
     </section>
     <section class="section-treinamento">
         <div class="row coluna">
-            <div class=" col-md-6 col-sm-6 col-12">
+            <div class=" col-md-6 col-sm-6 col-xs-12 col-12">
                 <img class="pistola" src="<?= asset('images/banners/pistola.png') ?>" width="90%" alt="">
             </div>
-            <div class="col-md-6 col-sm-6 col-12 text-primary text-consultoria">
+            <div class="col-md-6 col-sm-6 col-xs-12 col-12 text-primary text-consultoria">
                 <div class="d-flex justify-content-start div-h2">
                     <h2>Treinamento <br><span class="">e Consultoria</span></h2>
                 </div>
@@ -83,7 +84,7 @@
  
 
 
-
+<!--
     <section class="diferenciais py-2 py-lg-4">
         <div class="container">
             <div class="row">
@@ -130,54 +131,59 @@
             </div>
         </div>
     </section>
+                            -->
+<section class="diferenciais">
+    <!-- Swiper -->
+   
+            <!--
+            <?php foreach(range(0,9) as $i) : ?>
+                        <div class="swiper-slide">
+                            <div class="d-flex justify-content-center">
+                                <img src="<?= asset('images/icones/icon1.svg') ?>" alt="">
+                            </div>
+                            <div class="d-flex justify-content-center titulo">
+                                 <h2>Estoque pronta entrega</h2>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                  <p>Produtos da linha premium a pronta entrega</p>
+                            </div>
+                        </div>
+                        <?php endforeach; ?>
+            -->
 
 
-    <!--<section class="diferenciais py-2 py-lg-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 d-flex justify-content-center text-diferenciais">Diferenciais</div>
-                <div class="col-lg-4 col-md-6 icones d-flex justify-content-center">
-                    <div class="row conteudo">
-                        <div class="col-md-12 d-flex justify-content-center icone">
-                            <img src="<?= asset('images/icones/icon1.svg') ?>" alt="">
-                        </div>
-                        <div class="col-md-12 titulo">
-                            <h2>Estoque pronta entrega</h2>
-                        </div>
-                        <div class="col-md-12">
-                            <p>Produtos da linha premium a pronta entrega</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 icones">
-                    <div class="row conteudo">
-                        <div class="col-md-12 d-flex justify-content-center">
-                            <img src="<?= asset('images/icones/icon2.svg') ?>" alt="">
-                        </div>
-                        <div class="col-md-12 titulo">
-                            <h2>Desenvolvimento Ágil</h2>
-                        </div>
-                        <div class="col-md-12">
-                            <p>Laboratório moderno e tecnologias na busca de padrões únicos</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 icones">
-                    <div class="row conteudo">
-                        <div class="col-md-12 d-flex justify-content-center">
-                            <img src="<?= asset('images/icones/icon3.svg') ?>" alt="">
-                        </div>
-                        <div class="col-md-12 titulo">
-                            <h2>Suporte técnico</h2>
-                        </div>
-                        <div class="col-md-12">
-                            <p>Saiba dicas de utilização das tintas,pintura e saiba as novidades sobre</p>
-                        </div>
-                    </div>
-                </div>          
+
+
+<section class="banner-teste diferenciais">
+    <!-- Swiper -->
+<div class="">
+    <div class="col-md-12 d-flex justify-content-start text-diferenciais">Diferenciais</div>        
+              <div class="swiper mySwiper-banner-teste col-10">
+                 <div class="swiper-wrapper">
+
+                        <?php foreach(range(0,9) as $i) : ?>
+                                    <div class="swiper-slide">
+                                        <div class="d-flex justify-content-center icone">
+                                            <img src="<?= asset('images/icones/icon1.svg') ?>" alt="">
+                                        </div>
+                                        <div class="conteudo">
+                                            <div class="d-flex justify-content-center titulo">
+                                                <h2>Estoque pronta entrega</h2>
+                                            </div>
+                                            <div class="d-flex justify-content-center p">
+                                                <p>Produtos da linha premium a pronta entrega</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                        <?php endforeach; ?>
+                     </div>   
+                  <div class="swiper-button-next button-next"></div>
+                <div class="swiper-button-prev button-prev"></div>
+            <div class="swiper-pagination"></div>
             </div>
         </div>
-    </section>-->
+</section>
+
 
 <section class="banner">
     <!-- Swiper -->

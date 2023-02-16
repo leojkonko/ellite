@@ -16,8 +16,6 @@
         backdrop-filter: blur(7.5px);
         height: 100%;
 
-
-
         & .logo-footer img {
             margin: 25px 0px 25px 0px;
         }
@@ -56,22 +54,68 @@
             }
         }
     }
+
+    & .copyright {
+        color: rgba(255, 255, 255, 0.8);
+
+        border-top: 1px solid rgba(255, 255, 255, 0.8);
+
+        & div {
+            padding: 20px 0px;
+            font-size: 14px !important;
+            font-weight: 100 !important;
+
+            & a {
+                text-decoration: none;
+                color: rgba(255, 255, 255, 0.8);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+            }
+        }
+    }
 }
 
 @media (max-width: 575.98px) {
     .footer {
         background-size: cover;
-        height: 800px;
+        height: 900px;
+
+        & .links-site {
+            text-align: center;
+            justify-content: center !important;
+        }
+
+        & .infos {
+            text-align: center;
+            justify-content: center !important;
+        }
+
+        & .redes {
+            display: flex;
+            text-align: center;
+            justify-content: center !important;
+
+            & li {
+                padding: 0px 20px;
+
+            }
+        }
     }
 
-    .redes {
-        display: flex;
-        justify-content: center;
-        margin-left: 130px;
 
-        & li {
-            padding: 0px 20px;
+    .copyright {
+        margin-top: 300px;
 
+        & .direitos {}
+
+        & div {
+            justify-content: center !important;
+            display: flex;
+            //margin-left: 100px;
+            margin: 0px 40px;
+
+            & img {
+                width: 100%;
+            }
         }
     }
 }
@@ -79,11 +123,31 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
     .footer {
         background-size: cover;
-        height: 500px;
+        height: 560px;
+    }
+
+    .copyright {
+
+        & div {
+            justify-content: center !important;
+            display: flex;
+            //margin-left: 100px;
+            margin: 0px 40px;
+        }
     }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .copyright {
+
+        & .politica,
+        .logo-ellite {
+            justify-content: center !important;
+            display: flex;
+            //margin-left: 100px;
+        }
+    }
+}
 
 @media (min-width: 992px) and (max-width: 1199.98px) {}
 
