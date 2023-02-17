@@ -223,13 +223,17 @@
   display: flex;
   justify-content: start;
 }
+.header .container .div-menulateral button img {
+  width: 30px !important;
+  margin-top: 6px;
+}
 .header .container .menu-div {
   display: flex;
   justify-content: end;
 }
 .header .container div .logo {
   padding-left: 30px;
-  width: 50%;
+  width: 70%;
 }
 
 @media (max-width: 575.98px) {
@@ -830,7 +834,7 @@ não existe hover))
 
 @media (max-width: 449.99px) {
   .div-catalogo {
-    margin-top: 100px !important;
+    margin-top: 150px !important;
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
@@ -847,6 +851,7 @@ não existe hover))
   .div-catalogo button {
     margin-left: 30px;
     font-size: 14px;
+    margin-bottom: 50px;
   }
   .catalogo {
     background-image: url(../../../../webroot/site/src/images/backgrounds/banner-catalogo.svg);
@@ -866,7 +871,7 @@ não existe hover))
 }
 @media (min-width: 450px) and (max-width: 575.98px) {
   .div-catalogo {
-    margin-top: 120px !important;
+    margin-top: 160px !important;
     margin-left: 50px;
     margin-bottom: 30px;
   }
@@ -880,6 +885,7 @@ não existe hover))
   }
   .div-catalogo button {
     margin-left: 20px;
+    margin-bottom: 70px;
   }
   .catalogo {
     background-image: url(../../../../webroot/site/src/images/backgrounds/banner-catalogo.svg);

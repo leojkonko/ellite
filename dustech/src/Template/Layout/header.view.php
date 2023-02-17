@@ -64,7 +64,7 @@
                 <a href="/" class=""><img src="<?= asset('/images/logos/logo.svg') ?>" width="70%"
                         alt=""></a>
             </div>
-            <div class="col-lg-8 col-xl-8 col-md-4 col-sm-4 col-3 d-flex justify-content-center align-items-center menu-div">
+            <div class="col-lg-8 col-xl-8 col-3 d-flex justify-content-center align-items-center menu-div">
                 <ul class="d-flex align-items-center menu d-lg-flex d-md-none d-sm-none d-xs-none ">
                     <li><a href="/">Empresa</a></li>
                     <li class="dropdown">
@@ -90,14 +90,15 @@
                         <rect x="4" y="20" width="16" height="4" fill="white" />
                     </svg>
                 </button>
+                <div class=" d-flex d-lg-none d-xl-none d-md-flex d-sm-flex d-xs-flex align-items-center div-menulateral">
+                     <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight">
+                        <img src="<?= asset('/images/icones/lupa.svg') ?>" width="100%" alt="">
+                    </button>
+            </div>
             </div>
 
-            <div class="col-lg-1 col-xl-1 col-md-2 col-sm-2 col-3 d-flex align-items-center div-menulateral">
-                <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                    aria-controls="offcanvasRight">
-                    <img src="<?= asset('/images/icones/lupa.svg') ?>" width="100%" alt="">
-                </button>
-            </div>
+            
         </div>
     </div>
 

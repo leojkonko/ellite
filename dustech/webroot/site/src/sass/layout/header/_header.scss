@@ -113,6 +113,15 @@
             & .div-menulateral {
                 display: flex;
                 justify-content: start;
+
+                & button {
+                    & img {
+                        width: 30px !important;
+                        // border: 1px solid red;
+                        margin-top: 6px;
+                        //margin-left: auto;
+                    }
+                }
             }
 
             & .menu-div {
@@ -122,7 +131,7 @@
 
             & div .logo {
                 padding-left: 30px;
-                width: 50%;
+                width: 70%;
             }
         }
     }

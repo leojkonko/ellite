@@ -17,7 +17,7 @@
                 </div>
                 <div
                     class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 d-flex align-items-center justify-content-center">
-                    <ul class="infos">
+                    <ul class="infos p-0">
                         <li>
                             <a href="">
                                 <img src="<?= asset('/images/icones/localizacao.svg') ?>" alt="">
@@ -40,7 +40,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-1 col-md-1 col-sm-2 col-xs-12 col-12 d-flex align-items-center justify-content-center">
-                    <ul class="infos redes">
+                    <ul class="infos redes p-0">
                         <li><a href=""><img src="<?= asset('/images/icones/facebook.svg') ?>"alt=""></a>
                         </li>
                         <li><a href=""><img src="<?= asset('/images/icones/instagram.svg') ?>" alt=""></a>

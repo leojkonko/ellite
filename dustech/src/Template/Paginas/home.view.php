@@ -1,8 +1,14 @@
 
 
-<section>
+<!--<section>
     <img src="<?= asset('/images/backgrounds/img_principal.svg') ?>" width="100%" height="100%" alt="">
-</section>
+</section>-->
+    <section class="ratio ratio-6x9 ratio-lg-21x9 z-index-background">
+        <picture>
+            <source srcset="<?= asset('images/backgrounds/img_principal.svg') ?>" media="(min-width: 992px)">
+            <img class="object-fit-cover w-100 h-100" src="<?= asset('images/backgrounds/img_principal.svg') ?>" alt="">
+        </picture>
+    </section>
 
 <section class="produtos-destaques py-2 py-lg-4">
         <div class="container">
