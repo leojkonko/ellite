@@ -153,6 +153,12 @@
   border-bottom: $offcanvas-border-width solid $offcanvas-border-color;
   transform: translateY(-100%);
 
+  & .text-reset {
+    & span {
+      padding-left: 3px;
+    }
+  }
+
   & ul {
     display: block !important;
     margin: 0px auto;

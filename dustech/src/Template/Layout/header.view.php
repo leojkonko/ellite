@@ -105,7 +105,7 @@
 </header>
 <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
     <div class="offcanvas-header">
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><span>X</span></button>
     </div>
     <div class="offcanvas-body">
         <div class="">

@@ -4280,6 +4280,9 @@ textarea.form-control-lg {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   transform: translateY(-100%);
 }
+.offcanvas-top .text-reset span {
+  padding-left: 3px;
+}
 .offcanvas-top ul {
   display: block !important;
   margin: 0px auto;

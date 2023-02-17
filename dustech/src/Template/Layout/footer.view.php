@@ -6,7 +6,7 @@
                     <img src="<?= asset('/images/logos/logo.svg') ?>" alt="">
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 col-12 d-flex align-items-center justify-content-center">
-                    <ul class="links-site">
+                    <ul class="links-site p-0">
                         <li><a href="">Empresa</a></li>
                         <li><a href="">Cores sólidas</a></li>
                         <li><a href="">Cores metálicas</a></li>
