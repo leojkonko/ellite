@@ -1149,10 +1149,6 @@ não existe hover))
   .icones {
     display: none;
   }
-  .diferenciais .swiper-button-prev,
-.diferenciais .swiper-button-next {
-    margin-top: -80px !important;
-  }
   .diferenciais .text-diferenciais {
     margin-top: 60px;
     margin-bottom: -120px;
