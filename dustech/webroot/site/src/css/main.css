@@ -292,6 +292,7 @@
 }
 .footer .copyright {
   color: rgba(255, 255, 255, 0.8);
+  margin-right: 5px;
   border-top: 1px solid rgba(255, 255, 255, 0.8);
 }
 .footer .copyright div {
@@ -364,10 +365,6 @@
 @include media-hover - Fará o hover no lugar de utilizar .classe:hover (tambem será acima de 992px, ou seja, quando nao for mobile (pois no mobile
 não existe hover))
 */
-.html {
-  border: 1px solig red;
-}
-
 .produtos-destaques {
   background: linear-gradient(180deg, #202020 0%, #0D0D0D 100%);
   color: white;
@@ -602,6 +599,9 @@ não existe hover))
 }
 
 @media (max-width: 449.99px) {
+  .coluna {
+    margin-right: 10px;
+  }
   .text-consultoria {
     margin-left: -30px;
   }
@@ -620,7 +620,7 @@ não existe hover))
   }
   .text-consultoria .div-button {
     margin-top: 10px;
-    margin-left: 160px;
+    padding-left: 160px;
     margin-bottom: 30px;
   }
   .text-consultoria .div-h2 h2 {
@@ -631,13 +631,14 @@ não existe hover))
 @media (min-width: 450px) and (max-width: 575.98px) {
   .text-consultoria {
     margin-top: 60px !important;
-    margin-left: 60px;
+    padding-left: 60px;
     margin-bottom: 30px;
   }
   .coluna {
     background-image: url(../../../../webroot/site/src/images/backgrounds/bg-red.svg);
     background-size: cover;
     background-repeat: no-repeat;
+    margin-right: 10px;
   }
   .text-consultoria img {
     display: none !important;
@@ -666,6 +667,9 @@ não existe hover))
   }
   .text-consultoria h2 span {
     padding-left: 40px !important;
+  }
+  .coluna {
+    margin-right: 10px;
   }
   .coluna img {
     padding-top: 40px;
@@ -718,6 +722,7 @@ não existe hover))
     background-image: url(../../../../webroot/site/src/images/backgrounds/bg-red.svg);
     background-size: cover;
     background-repeat: no-repeat;
+    margin-right: 5px;
   }
   .coluna .pistola {
     padding-top: 20px;
@@ -750,6 +755,7 @@ não existe hover))
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
+    margin-right: 10px;
   }
   .coluna .pistola {
     padding-top: 20px;
@@ -772,6 +778,7 @@ não existe hover))
     background-size: 75%;
     background-repeat: no-repeat;
     height: 100%;
+    margin-right: 10px;
   }
   .coluna .pistola {
     width: cover !important;
@@ -793,6 +800,7 @@ não existe hover))
     background-size: 75%;
     background-repeat: no-repeat;
     height: 100%;
+    margin-right: 15px;
   }
   .coluna .pistola {
     width: cover !important;
@@ -838,7 +846,9 @@ não existe hover))
 @media (max-width: 449.99px) {
   .div-catalogo {
     margin-top: 150px !important;
+    padding-left: 10px;
     margin-bottom: 30px;
+    width: 100%;
     display: flex;
     justify-content: center;
   }
@@ -875,7 +885,7 @@ não existe hover))
 @media (min-width: 450px) and (max-width: 575.98px) {
   .div-catalogo {
     margin-top: 160px !important;
-    margin-left: 50px;
+    padding-left: 50px;
     margin-bottom: 30px;
   }
   .div-catalogo h2 {
@@ -909,7 +919,7 @@ não existe hover))
 @media (min-width: 576px) and (max-width: 767.98px) {
   .div-catalogo {
     margin-top: 120px !important;
-    margin-left: 50px;
+    padding-left: 50px;
     margin-bottom: 60px;
   }
   .div-catalogo h2 {
@@ -945,7 +955,7 @@ não existe hover))
 @media (min-width: 768px) and (max-width: 991.98px) {
   .div-catalogo {
     margin-top: 120px !important;
-    margin-left: 10px;
+    padding-left: 10px;
     margin-bottom: 60px;
   }
   .div-catalogo h2 {
@@ -1082,6 +1092,7 @@ não existe hover))
   font-size: 128px;
   line-height: 100%;
   color: rgba(255, 255, 255, 0.2);
+  overflow-x: hidden;
 }
 .diferenciais .swiper-slide {
   margin-bottom: 40px;
@@ -1255,7 +1266,6 @@ não existe hover))
   }
   .text-diferenciais {
     padding-left: 90px;
-    border: 1px solid red;
     width: 100%;
     margin-top: 60px;
     font-size: 100px !important;
@@ -1290,7 +1300,7 @@ não existe hover))
     margin-top: -80px !important;
   }
   .diferenciais .text-diferenciais {
-    margin-left: 150px;
+    padding-left: 150px;
     margin-top: 60px;
   }
   .diferenciais .swiper-slide .icone img {
@@ -1323,7 +1333,7 @@ não existe hover))
     margin-top: -80px !important;
   }
   .diferenciais .text-diferenciais {
-    margin-left: 120px;
+    padding-left: 120px;
     margin-top: 60px;
   }
   .diferenciais .swiper-slide .conteudo .titulo {
@@ -1354,7 +1364,7 @@ não existe hover))
     margin-top: -80px !important;
   }
   .diferenciais .text-diferenciais {
-    margin-left: 180px;
+    padding-left: 180px;
     margin-top: 100px;
   }
   .diferenciais .swiper-slide .conteudo .titulo {

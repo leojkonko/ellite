@@ -10,10 +10,6 @@ não existe hover))
 
 // ----------------------------------------------------------------------produtos destaques  
 
-.html {
-    border: 1px solig red;
-}
-
 .produtos-destaques {
     //overflow-x: hidden;
     background: linear-gradient(180deg, #202020 0%, #0D0D0D 100%);
@@ -289,7 +285,7 @@ não existe hover))
 // ----------------------------------------------------------------------section treinamento
 
 .section-treinamento {
-    //overflow-x: hidden;
+
     background: linear-gradient(180deg, #0D0D0D 0%, #2B2B2B 100%);
 
     & .coluna {
@@ -324,6 +320,10 @@ não existe hover))
 }
 
 @media (max-width: 449.99px) {
+    .coluna {
+        margin-right: 10px;
+    }
+
     .text-consultoria {
         margin-left: -30px;
     }
@@ -346,7 +346,7 @@ não existe hover))
 
     .text-consultoria .div-button {
         margin-top: 10px;
-        margin-left: 160px;
+        padding-left: 160px;
         margin-bottom: 30px;
     }
 
@@ -360,7 +360,7 @@ não existe hover))
 @media (min-width: 450px) and (max-width: 575.98px) {
     .text-consultoria {
         margin-top: 60px !important;
-        margin-left: 60px;
+        padding-left: 60px;
         margin-bottom: 30px;
     }
 
@@ -368,6 +368,7 @@ não existe hover))
         background-image: url(../../../../webroot/site/src/images/backgrounds/bg-red.svg);
         background-size: cover;
         background-repeat: no-repeat;
+        margin-right: 10px;
     }
 
     .text-consultoria img {
@@ -406,10 +407,14 @@ não existe hover))
         padding-left: 40px !important;
     }
 
-    .coluna img {
-        padding-top: 40px;
-        width: 50% !important;
+    .coluna {
+        margin-right: 10px;
 
+        & img {
+            padding-top: 40px;
+            width: 50% !important;
+
+        }
     }
 
     .text-consultoria .div-h2 {
@@ -474,6 +479,7 @@ não existe hover))
         background-image: url(../../../../webroot/site/src/images/backgrounds/bg-red.svg);
         background-size: cover;
         background-repeat: no-repeat;
+        margin-right: 5px;
 
         & .pistola {
             padding-top: 20px;
@@ -517,6 +523,7 @@ não existe hover))
         background-size: cover;
         background-repeat: no-repeat;
         height: 100%;
+        margin-right: 10px;
 
         & .pistola {
             padding-top: 20px;
@@ -544,6 +551,7 @@ não existe hover))
         background-size: 75%;
         background-repeat: no-repeat;
         height: 100%;
+        margin-right: 10px;
 
         & .pistola {
             width: cover !important;
@@ -570,6 +578,7 @@ não existe hover))
         background-size: 75%;
         background-repeat: no-repeat;
         height: 100%;
+        margin-right: 15px;
 
         & .pistola {
             width: cover !important;
@@ -606,9 +615,12 @@ não existe hover))
 
 // ------------------------------------------------------------------------------------section catalogo
 .catalogo {
-    //overflow-x: hidden;
 
-    & .container {}
+    //overflow-x: hidden;
+    & div {
+        //border: 1px solid red;
+        //overflow-x: hidden;
+    }
 
     & .div-catalogo {
         & button {
@@ -635,8 +647,9 @@ não existe hover))
 @media (max-width: 449.99px) {
     .div-catalogo {
         margin-top: 150px !important;
-        //margin-left: 10px;
+        padding-left: 10px;
         margin-bottom: 30px;
+        width: 100%;
         display: flex;
         justify-content: center;
 
@@ -683,7 +696,7 @@ não existe hover))
 @media (min-width: 450px) and (max-width: 575.98px) {
     .div-catalogo {
         margin-top: 160px !important;
-        margin-left: 50px;
+        padding-left: 50px;
         margin-bottom: 30px;
 
         & h2 {
@@ -727,7 +740,7 @@ não existe hover))
 @media (min-width: 576px) and (max-width: 767.98px) {
     .div-catalogo {
         margin-top: 120px !important;
-        margin-left: 50px;
+        padding-left: 50px;
         margin-bottom: 60px;
 
         & h2 {
@@ -774,7 +787,7 @@ não existe hover))
 @media (min-width: 768px) and (max-width: 991.98px) {
     .div-catalogo {
         margin-top: 120px !important;
-        margin-left: 10px;
+        padding-left: 10px;
         margin-bottom: 60px;
 
         & h2 {
@@ -956,6 +969,7 @@ não existe hover))
         font-size: 128px;
         line-height: 100%;
         color: rgba(255, 255, 255, 0.2);
+        overflow-x: hidden;
     }
 
     & .swiper-slide {
@@ -1209,7 +1223,6 @@ não existe hover))
 
     .text-diferenciais {
         padding-left: 90px;
-        border: 1px solid red;
         width: 100%;
         margin-top: 60px;
         font-size: 100px !important;
@@ -1261,7 +1274,7 @@ não existe hover))
 
     .diferenciais {
         .text-diferenciais {
-            margin-left: 150px;
+            padding-left: 150px;
             margin-top: 60px;
         }
 
@@ -1312,7 +1325,7 @@ não existe hover))
 
     .diferenciais {
         .text-diferenciais {
-            margin-left: 120px;
+            padding-left: 120px;
             margin-top: 60px;
         }
 
@@ -1362,7 +1375,7 @@ não existe hover))
 
     .diferenciais {
         .text-diferenciais {
-            margin-left: 180px;
+            padding-left: 180px;
             margin-top: 100px;
         }
 
