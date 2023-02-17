@@ -57,10 +57,10 @@
             <div class="col-lg-8 col-md-12 col-12  d-flex justify-content-center direitos">
                 Copyright @ <?= date('Y') ?> Dustech Premium Powder Coating. Todos os direitos reservados. CNPJ 00.000.000/0000-00
             </div>
-            <div class="col-lg-2 col-md-6 politica col-sm-4 col-3">
+            <div class="col-lg-2 col-md-6 politica col-12">
                 <a href="">Política de privacidade</a>
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-4 logo-ellite col-3">
+            <div class="col-lg-2 col-md-6  logo-ellite col-12">
                 <img src="<?= asset('/images/logos/logo-ellite.svg') ?>" alt="">
             </div>
         </div>

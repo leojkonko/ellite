@@ -186,23 +186,21 @@
 
 
 <section class="banner">
-    <!-- Swiper -->
     <div class="container">
-        <div class="swiper mySwiper-banner col-10">
-            <div class="swiper-wrapper">
-
-        <?php foreach(range(0,9) as $i) : ?>
-            <div class="swiper-slide">
-                <img class="logo-banner" src="<?= asset('images/logos/logo-banner.svg') ?>" width="70%" alt="">
-            </div>
+    <!-- Swiper -->
+        <div class="swiper mySwiper-banner">
+            <div class="swiper-wrapper text-dark">
+            <?php foreach(range(0,9) as $i) : ?>               
+                <div class="swiper-slide d-flex justify-content-center">
+                    <img src="<?= asset('images/logos/logo-banner.svg') ?>" alt="">
+                </div>
             <?php endforeach; ?>
+            </div>
         </div>
-
-            
-        </div>
-             <div class="swiper-button-next button-next"></div>
-            <div class="swiper-button-prev button-prev"></div>
-        </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    
+  </div>
 </section>
 
 

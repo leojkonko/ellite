@@ -69,9 +69,23 @@ var swiper = new Swiper(".mySwiper-banner-teste", {
 
 
 var swiper = new Swiper(".mySwiper-banner", {
-    slidesPerView: 6,
+    slidesPerView: 1,
     navigation: {
         nextEl: ".banner .swiper-button-next",
         prevEl: ".banner .swiper-button-prev",
     },
+    breakpoints: {
+        1200: {
+            slidesPerView: 5,
+        },
+        992: {
+            slidesPerView: 5,
+        },
+        767: {
+            slidesPerView: 3,
+        },
+        576: {
+            slidesPerView: 2,
+        },
+    }
 });

@@ -291,7 +291,7 @@
   border-top: 1px solid rgba(255, 255, 255, 0.8);
 }
 .footer .copyright div {
-  padding: 20px 0px;
+  padding: 20px 30px;
   font-size: 14px !important;
   font-weight: 100 !important;
 }
@@ -304,7 +304,7 @@
 @media (max-width: 575.98px) {
   .footer {
     background-size: cover;
-    height: 900px;
+    height: 950px;
   }
   .footer .links-site {
     text-align: center;
@@ -328,21 +328,21 @@
   .copyright div {
     justify-content: center !important;
     display: flex;
-    margin: 0px 40px;
+    text-align: center;
   }
   .copyright div img {
-    width: 100%;
+    width: 20%;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
   .footer {
     background-size: cover;
-    height: 560px;
+    height: 600px;
   }
   .copyright div {
     justify-content: center !important;
     display: flex;
-    margin: 0px 40px;
+    text-align: center;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -360,9 +360,10 @@
 @include media-hover - Fará o hover no lugar de utilizar .classe:hover (tambem será acima de 992px, ou seja, quando nao for mobile (pois no mobile
 não existe hover))
 */
-section {
-  overflow-x: hidden;
-  overflow-y: hidden;
+@media (max-width: 992px) {
+  section {
+    overflow-x: hidden;
+  }
 }
 
 .produtos-destaques {
@@ -498,20 +499,20 @@ section {
 .produtos-destaques .swiper-button-prev:after {
     margin-top: 100px;
   }
-  .span {
-    padding: -10px;
-    font-size: 14px;
-    width: 60px !important;
-  }
-  .swiper-wrapper {
+  .produtos-destaques .swiper-wrapper {
     justify-content: center;
     display: flex;
     position: relative;
   }
-  .swiper-wrapper .swiper-slide {
+  .produtos-destaques .swiper-wrapper .swiper-slide {
     display: flex;
     justify-content: center;
     margin-top: 130px;
+  }
+  .span {
+    padding: -10px;
+    font-size: 14px;
+    width: 60px !important;
   }
   .swiper-wrapper .swiper-slide .slide-img img {
     width: 140px;
@@ -836,14 +837,15 @@ section {
   }
   .div-catalogo h2 {
     font-size: 28px !important;
+    text-align: center;
   }
   .div-catalogo img {
     width: 55%;
-    margin-left: 60px;
-    margin-top: -35px;
+    margin-left: 50px;
+    margin-top: -40px;
   }
   .div-catalogo button {
-    margin-left: 0px;
+    margin-left: 30px;
     font-size: 14px;
   }
   .catalogo {
@@ -1075,7 +1077,7 @@ section {
 .diferenciais .swiper-slide {
   margin-bottom: 40px;
 }
-.diferenciais .swiper-slide img {
+.diferenciais .swiper-slide .icone img {
   border: 1px solid #C44438;
   border-radius: 8px;
   padding: 0px 30px;
@@ -1101,6 +1103,10 @@ section {
   margin-left: -85px;
   width: 80%;
 }
+.diferenciais .swiper-button-next,
+.diferenciais .swiper-button-prev {
+  color: #C44438;
+}
 .diferenciais .conteudo img {
   transition: margin-top 0.25s ease-in-out 0s;
 }
@@ -1123,32 +1129,73 @@ section {
   .diferenciais .swiper-diferenciais,
 .swiper-button-next,
 .swiper-button-prev {
-    display: block;
+    margin-top: 0px !important;
   }
-  .text-diferenciais {
+  .diferenciais .text-diferenciais {
+    margin-top: 60px;
+    margin-bottom: -120px;
     display: flex;
     justify-content: center;
     font-size: 50px !important;
-    margin-bottom: -130px;
-    margin-top: 60px;
   }
-  .diferenciais .swiper-slide img {
+  .diferenciais .swiper-slide .icone {
+    margin-top: -50px;
+  }
+  .diferenciais .swiper-slide .icone img {
     border-radius: 8px;
-    padding: 10px 30px !important;
-    margin-bottom: 20px;
-    width: 85%;
+    width: 70%;
+    margin-top: 60px;
   }
   .diferenciais .swiper-slide .titulo {
     display: flex;
-    justify-content: start;
+    justify-content: center;
+    text-align: center;
   }
   .diferenciais .swiper-slide .titulo h2 {
     width: 310px;
+    margin-left: 0px;
+    font-size: 20px;
+  }
+  .diferenciais .swiper-slide .p {
+    display: flex;
+    justify-content: center !important;
+    text-align: center;
+  }
+  .diferenciais .swiper-slide .p p {
     margin-left: 10px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 578px) and (max-width: 767.98px) {
+  .diferenciais .swiper-diferenciais .swiper-button-next,
+.swiper-button-prev {
+    margin-top: -80px !important;
+  }
+  .diferenciais .text-diferenciais {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    font-size: 75px !important;
+  }
+  .diferenciais .swiper-slide .icone img {
+    border-radius: 8px;
+    width: 58%;
+    margin-top: 60px;
+  }
+  .diferenciais .swiper-slide .titulo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .diferenciais .swiper-slide .titulo h2 {
+    width: 310px;
+    margin-left: 0px;
     font-size: 24px;
   }
   .diferenciais .swiper-slide .p {
-    display: block;
+    display: flex;
+    justify-content: center !important;
+    text-align: center;
   }
   .diferenciais .swiper-slide .p p {
     margin-left: 10px;
@@ -1169,7 +1216,7 @@ section {
     margin-bottom: -100px;
     font-size: 100px !important;
   }
-  .diferenciais .swiper-slide img {
+  .diferenciais .swiper-slide .icone img {
     border-radius: 8px;
     padding: 10px 30px !important;
     margin-bottom: 20px;
@@ -1195,14 +1242,14 @@ section {
   .diferenciais .swiper-diferenciais,
 .swiper-button-next,
 .swiper-button-prev {
-    display: none;
+    margin-top: -80px !important;
   }
   .text-diferenciais {
     margin-left: 90px;
     margin-top: 60px;
     font-size: 100px !important;
   }
-  .diferenciais .swiper-slide img {
+  .diferenciais .swiper-slide .icone img {
     border-radius: 8px;
     padding: 10px 30px !important;
     margin-bottom: 20px;
@@ -1230,13 +1277,13 @@ section {
   .diferenciais .swiper-diferenciais,
 .swiper-button-next,
 .swiper-button-prev {
-    display: none;
+    margin-top: -80px !important;
   }
   .diferenciais .text-diferenciais {
     margin-left: 150px;
     margin-top: 60px;
   }
-  .diferenciais .swiper-slide img {
+  .diferenciais .swiper-slide .icone img {
     border-radius: 8px;
     padding: 10px 30px !important;
     margin-bottom: 20px;
@@ -1261,6 +1308,11 @@ section {
   }
 }
 @media (min-width: 1300px) and (max-width: 1599px) {
+  .diferenciais .swiper-diferenciais,
+.swiper-button-next,
+.swiper-button-prev {
+    margin-top: -80px !important;
+  }
   .diferenciais .text-diferenciais {
     margin-left: 120px;
     margin-top: 60px;
@@ -1280,7 +1332,7 @@ section {
   .diferenciais .swiper-slide .conteudo .p p {
     width: 270px;
   }
-  .diferenciais .swiper-slide img {
+  .diferenciais .swiper-slide .icone img {
     border: 1px solid #C44438;
     border-radius: 8px;
     padding: 10px 30px !important;
@@ -1288,6 +1340,11 @@ section {
   }
 }
 @media (min-width: 1600px) and (max-width: 1981px) {
+  .diferenciais .swiper-diferenciais,
+.swiper-button-next,
+.swiper-button-prev {
+    margin-top: -80px !important;
+  }
   .diferenciais .text-diferenciais {
     margin-left: 180px;
     margin-top: 100px;
@@ -1306,7 +1363,7 @@ section {
   .diferenciais .swiper-slide .conteudo .p p {
     width: 370px;
   }
-  .diferenciais .swiper-slide img {
+  .diferenciais .swiper-slide .icone img {
     border: 1px solid #C44438;
     border-radius: 8px;
     padding: 10px 70px !important;
@@ -1329,10 +1386,63 @@ section {
   justify-content: center;
   align-items: center;
 }
-.banner .container .mySwiper-banner .swiper-slide .logo-banner {
-  display: block;
-  object-fit: cover;
-  margin: 55px 0px;
+.banner .container .mySwiper-banner .swiper-slide img {
+  /*@include media-breakpoint-between(0px, 576px) {
+      margin-top: -140px !important;
+      margin-bottom: 0px !important;
+      width: 90% !important;
+      border: none !important;
+  }
+
+  @include media-breakpoint-between(577px, 767px) {
+      margin-top: -70px !important;
+      margin-bottom: 20px !important;
+      width: 80% !important;
+      border: 1px solid red !important;
+  }
+
+  @include media-breakpoint-between(767px, 992px) {
+      margin-top: 60px;
+      margin-bottom: 40px;
+      width: 70%;
+      display: flex;
+  }
+
+  @include media-breakpoint-between(lg, xl) {
+      border: 1px solid red;
+      margin-top: 60px;
+      margin-bottom: 40px;
+      width: 70%;
+  }*/
+}
+@media (min-width: 1px) and (max-width: 576px) {
+  .banner .container .mySwiper-banner .swiper-slide img {
+    margin-top: -140px;
+    margin-bottom: 0px;
+    width: 70%;
+    border: none;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .banner .container .mySwiper-banner .swiper-slide img {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .banner .container .mySwiper-banner .swiper-slide img {
+    margin-top: -80px;
+    margin-bottom: 30px;
+    width: 80%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1981px) {
+  .banner .container .mySwiper-banner .swiper-slide img {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    width: 80%;
+  }
 }
 .banner .container .swiper-button-next:after,
 .banner .container .swiper-button-prev:after {
