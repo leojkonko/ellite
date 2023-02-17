@@ -364,10 +364,8 @@
 @include media-hover - Fará o hover no lugar de utilizar .classe:hover (tambem será acima de 992px, ou seja, quando nao for mobile (pois no mobile
 não existe hover))
 */
-@media (max-width: 992px) {
-  section {
-    overflow-x: hidden;
-  }
+.html {
+  border: 1px solig red;
 }
 
 .produtos-destaques {
@@ -394,7 +392,7 @@ não existe hover))
 .produtos-destaques .swiper .swiper-button-next,
 .produtos-destaques .swiper .swiper-button-prev {
   color: #C44438;
-  margin-top: 10px;
+  margin-top: 10px !important;
 }
 @media (max-width: 575.98px) {
   .produtos-destaques .swiper .swiper-button-next,
@@ -403,9 +401,14 @@ não existe hover))
   }
 }
 .produtos-destaques .swiper .swiper-pagination1 {
+  /*background-color: rgba($color: $white, 0.35);
+
+  &-active {
+      //background-color: rgba($color: $white, 0.35);
+  }*/
   position: relative !important;
   --swiper-theme-color: #C44438 !important;
-  margin-top: 30px;
+  padding-top: 30px !important;
 }
 .produtos-destaques .swiper-button-next:after,
 .produtos-destaques .swiper-button-prev:after {
@@ -1082,6 +1085,7 @@ não existe hover))
 }
 .diferenciais .swiper-slide {
   margin-bottom: 40px;
+  margin-top: 30px;
 }
 .diferenciais .swiper-slide .icone img {
   border: 1px solid #C44438;
@@ -1113,17 +1117,19 @@ não existe hover))
 .diferenciais .swiper-button-prev {
   color: #C44438;
 }
-.diferenciais .conteudo img {
+.diferenciais .icone {
   transition: margin-top 0.25s ease-in-out 0s;
 }
-.diferenciais .conteudo:hover img {
+.diferenciais .swiper-slide:hover .icone {
   margin-top: -20px;
+}
+.diferenciais .swiper-slide:hover .icone img {
   border: transparent;
   background: linear-gradient(180deg, #2E2E2E 0%, rgba(46, 46, 46, 0) 100%, #202020 100%);
   filter: drop-shadow(0px 45px 45px rgba(0, 0, 0, 0.35));
   box-shadow: 0px 5px 15px black;
 }
-.diferenciais .conteudo:hover .titulo {
+.diferenciais .swiper-slide:hover .titulo {
   color: #C44438;
   transition: color 0.25s ease-in-out 0s;
 }
@@ -1132,10 +1138,9 @@ não existe hover))
   .icones {
     display: none;
   }
-  .diferenciais .swiper-diferenciais,
-.swiper-button-next,
-.swiper-button-prev {
-    margin-top: 0px !important;
+  .diferenciais .swiper-button-prev,
+.diferenciais .swiper-button-next {
+    margin-top: -80px !important;
   }
   .diferenciais .text-diferenciais {
     margin-top: 60px;
@@ -1145,7 +1150,7 @@ não existe hover))
     font-size: 50px !important;
   }
   .diferenciais .swiper-slide .icone {
-    margin-top: -50px;
+    margin-top: 50px;
   }
   .diferenciais .swiper-slide .icone img {
     border-radius: 8px;
@@ -1173,8 +1178,8 @@ não existe hover))
   }
 }
 @media (min-width: 578px) and (max-width: 767.98px) {
-  .diferenciais .swiper-diferenciais .swiper-button-next,
-.swiper-button-prev {
+  .diferenciais .swiper-button-prev,
+.diferenciais .swiper-button-next {
     margin-top: -80px !important;
   }
   .diferenciais .text-diferenciais {
@@ -1211,13 +1216,12 @@ não existe hover))
   .icones {
     display: none;
   }
-  .diferenciais .swiper-diferenciais,
-.swiper-button-next,
+  .diferenciais .swiper-diferenciais .swiper-button-next,
 .swiper-button-prev {
     display: block;
   }
   .diferenciais .text-diferenciais {
-    margin-left: 90px;
+    padding-left: 90px;
     margin-top: 60px;
     margin-bottom: -100px;
     font-size: 100px !important;
@@ -1245,13 +1249,14 @@ não existe hover))
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .diferenciais .swiper-diferenciais,
-.swiper-button-next,
-.swiper-button-prev {
+  .diferenciais .swiper-button-prev,
+.diferenciais .swiper-button-next {
     margin-top: -80px !important;
   }
   .text-diferenciais {
-    margin-left: 90px;
+    padding-left: 90px;
+    border: 1px solid red;
+    width: 100%;
     margin-top: 60px;
     font-size: 100px !important;
   }
@@ -1280,8 +1285,7 @@ não existe hover))
   }
 }
 @media (min-width: 1200px) and (max-width: 1299.98px) {
-  .diferenciais .swiper-diferenciais,
-.swiper-button-next,
+  .diferenciais .swiper-diferenciais .swiper-button-next,
 .swiper-button-prev {
     margin-top: -80px !important;
   }
@@ -1314,9 +1318,8 @@ não existe hover))
   }
 }
 @media (min-width: 1300px) and (max-width: 1599px) {
-  .diferenciais .swiper-diferenciais,
-.swiper-button-next,
-.swiper-button-prev {
+  .diferenciais .swiper-button-prev,
+.diferenciais .swiper-button-next {
     margin-top: -80px !important;
   }
   .diferenciais .text-diferenciais {
@@ -1346,9 +1349,8 @@ não existe hover))
   }
 }
 @media (min-width: 1600px) and (max-width: 1981px) {
-  .diferenciais .swiper-diferenciais,
-.swiper-button-next,
-.swiper-button-prev {
+  .diferenciais .swiper-button-prev,
+.diferenciais .swiper-button-next {
     margin-top: -80px !important;
   }
   .diferenciais .text-diferenciais {
@@ -1377,6 +1379,7 @@ não existe hover))
   }
 }
 .banner {
+  overflow-x: hidden;
   background: #fff;
 }
 .banner .container {
@@ -1423,8 +1426,8 @@ não existe hover))
 }
 @media (min-width: 1px) and (max-width: 576px) {
   .banner .container .mySwiper-banner .swiper-slide img {
-    margin-top: -140px;
-    margin-bottom: 0px;
+    margin-top: -120px;
+    margin-bottom: 60px;
     width: 70%;
     border: none;
   }
@@ -1432,21 +1435,21 @@ não existe hover))
 @media (min-width: 576px) and (max-width: 767px) {
   .banner .container .mySwiper-banner .swiper-slide img {
     margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     width: 80%;
   }
 }
 @media (min-width: 767px) and (max-width: 992px) {
   .banner .container .mySwiper-banner .swiper-slide img {
-    margin-top: -80px;
-    margin-bottom: 30px;
+    margin-top: -90px;
+    margin-bottom: 60px;
     width: 80%;
   }
 }
 @media (min-width: 992px) and (max-width: 1981px) {
   .banner .container .mySwiper-banner .swiper-slide img {
     margin-top: 70px;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     width: 80%;
   }
 }

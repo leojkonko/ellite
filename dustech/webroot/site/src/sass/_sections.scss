@@ -10,13 +10,12 @@ não existe hover))
 
 // ----------------------------------------------------------------------produtos destaques  
 
-section {
-    @media (max-width: 992px) {
-        overflow-x: hidden;
-    }
+.html {
+    border: 1px solig red;
 }
 
 .produtos-destaques {
+    //overflow-x: hidden;
     background: linear-gradient(180deg, #202020 0%, #0D0D0D 100%);
     color: white;
     padding: 50px 0px;
@@ -44,7 +43,7 @@ section {
         & .swiper-button-next,
         .swiper-button-prev {
             color: #C44438;
-            margin-top: 10px;
+            margin-top: 10px !important;
 
             @include media-breakpoint-between(xs, sm) {
                 display: none;
@@ -52,9 +51,15 @@ section {
         }
 
         & .swiper-pagination1 {
+            /*background-color: rgba($color: $white, 0.35);
+
+            &-active {
+                //background-color: rgba($color: $white, 0.35);
+            }*/
+
             position: relative !important;
             --swiper-theme-color: #C44438 !important;
-            margin-top: 30px;
+            padding-top: 30px !important;
         }
     }
 
@@ -938,6 +943,8 @@ section {
 
 
 .diferenciais {
+    //overflow-x: hidden;
+    //overflow-y: hidden;
     background: linear-gradient(180deg, #202020 0%, #0D0D0D 100%);
     color: white;
 
@@ -953,6 +960,7 @@ section {
 
     & .swiper-slide {
         margin-bottom: 40px;
+        margin-top: 30px;
 
         & .icone {
             & img {
@@ -993,20 +1001,21 @@ section {
 
     //---------diferenciais
 
-    & .conteudo {
-        & img {
-            transition: margin-top 0.25s ease-in-out 0s;
-        }
+    & .icone {
+        transition: margin-top 0.25s ease-in-out 0s;
     }
 
-    & .conteudo:hover {
-        & img {
+    & .swiper-slide:hover {
+        & .icone {
             margin-top: -20px;
-            border: transparent;
-            background: linear-gradient(180deg, #2E2E2E 0%, rgba(46, 46, 46, 0) 100%, #202020 100%);
-            filter: drop-shadow(0px 45px 45px rgba(0, 0, 0, 0.35));
-            box-shadow: 0px 5px 15px black;
-            ;
+
+            & img {
+                border: transparent;
+                background: linear-gradient(180deg, #2E2E2E 0%, rgba(46, 46, 46, 0) 100%, #202020 100%);
+                filter: drop-shadow(0px 45px 45px rgba(0, 0, 0, 0.35));
+                box-shadow: 0px 5px 15px black;
+                ;
+            }
         }
 
         & .titulo {
@@ -1024,10 +1033,12 @@ section {
 
 
 
-    .diferenciais .swiper-diferenciais,
-    .swiper-button-next,
-    .swiper-button-prev {
-        margin-top: 0px !important;
+    .diferenciais {
+
+        & .swiper-button-prev,
+        .swiper-button-next {
+            margin-top: -80px !important;
+        }
     }
 
     .diferenciais {
@@ -1043,7 +1054,7 @@ section {
 
 
             & .icone {
-                margin-top: -50px;
+                margin-top: 50px;
 
                 & img {
                     border-radius: 8px;
@@ -1082,9 +1093,12 @@ section {
 
 @media (min-width: 578px) and (max-width: 767.98px) {
 
-    .diferenciais .swiper-diferenciais .swiper-button-next,
-    .swiper-button-prev {
-        margin-top: -80px !important;
+    .diferenciais {
+
+        & .swiper-button-prev,
+        .swiper-button-next {
+            margin-top: -80px !important;
+        }
     }
 
     .diferenciais {
@@ -1136,15 +1150,14 @@ section {
         display: none;
     }
 
-    .diferenciais .swiper-diferenciais,
-    .swiper-button-next,
+    .diferenciais .swiper-diferenciais .swiper-button-next,
     .swiper-button-prev {
         display: block;
     }
 
     .diferenciais {
         .text-diferenciais {
-            margin-left: 90px;
+            padding-left: 90px;
             margin-top: 60px;
             margin-bottom: -100px;
             font-size: 100px !important;
@@ -1186,14 +1199,18 @@ section {
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
-    .diferenciais .swiper-diferenciais,
-    .swiper-button-next,
-    .swiper-button-prev {
-        margin-top: -80px !important;
+    .diferenciais {
+
+        & .swiper-button-prev,
+        .swiper-button-next {
+            margin-top: -80px !important;
+        }
     }
 
     .text-diferenciais {
-        margin-left: 90px;
+        padding-left: 90px;
+        border: 1px solid red;
+        width: 100%;
         margin-top: 60px;
         font-size: 100px !important;
     }
@@ -1237,8 +1254,7 @@ section {
 
 @media (min-width: 1200px) and (max-width: 1299.98px) {
 
-    .diferenciais .swiper-diferenciais,
-    .swiper-button-next,
+    .diferenciais .swiper-diferenciais .swiper-button-next,
     .swiper-button-prev {
         margin-top: -80px !important;
     }
@@ -1286,10 +1302,12 @@ section {
 
 @media (min-width: 1300px) and (max-width: 1599px) {
 
-    .diferenciais .swiper-diferenciais,
-    .swiper-button-next,
-    .swiper-button-prev {
-        margin-top: -80px !important;
+    .diferenciais {
+
+        & .swiper-button-prev,
+        .swiper-button-next {
+            margin-top: -80px !important;
+        }
     }
 
     .diferenciais {
@@ -1334,10 +1352,12 @@ section {
 
 @media (min-width: 1600px) and (max-width: 1981px) {
 
-    .diferenciais .swiper-diferenciais,
-    .swiper-button-next,
-    .swiper-button-prev {
-        margin-top: -80px !important;
+    .diferenciais {
+
+        & .swiper-button-prev,
+        .swiper-button-next {
+            margin-top: -80px !important;
+        }
     }
 
     .diferenciais {
@@ -1384,6 +1404,7 @@ section {
 // section banner -----------------------------------------------------------------------------
 
 .banner {
+    overflow-x: hidden;
     background: #fff;
 
     & .container {
@@ -1433,27 +1454,27 @@ section {
                     }*/
 
                     @media (min-width: 1px) and (max-width: 576px) {
-                        margin-top: -140px;
-                        margin-bottom: 0px;
+                        margin-top: -120px;
+                        margin-bottom: 60px;
                         width: 70%;
                         border: none;
                     }
 
                     @media (min-width: 576px) and (max-width: 767px) {
                         margin-top: 50px;
-                        margin-bottom: 20px;
+                        margin-bottom: 50px;
                         width: 80%;
                     }
 
                     @media (min-width: 767px) and (max-width: 992px) {
-                        margin-top: -80px;
-                        margin-bottom: 30px;
+                        margin-top: -90px;
+                        margin-bottom: 60px;
                         width: 80%;
                     }
 
                     @media (min-width: 992px) and (max-width: 1981px) {
                         margin-top: 70px;
-                        margin-bottom: 30px;
+                        margin-bottom: 70px;
                         width: 80%;
                     }
                 }

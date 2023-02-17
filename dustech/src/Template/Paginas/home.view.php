@@ -138,24 +138,6 @@
         </div>
     </section>
                             -->
-<section class="diferenciais">
-    <!-- Swiper -->
-   
-            <!--
-            <?php foreach(range(0,9) as $i) : ?>
-                        <div class="swiper-slide">
-                            <div class="d-flex justify-content-center">
-                                <img src="<?= asset('images/icones/icon1.svg') ?>" alt="">
-                            </div>
-                            <div class="d-flex justify-content-center titulo">
-                                 <h2>Estoque pronta entrega</h2>
-                            </div>
-                            <div class="d-flex justify-content-center">
-                                  <p>Produtos da linha premium a pronta entrega</p>
-                            </div>
-                        </div>
-                        <?php endforeach; ?>
-            -->
 
 
 
