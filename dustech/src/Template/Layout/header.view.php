@@ -165,42 +165,25 @@
     ob_end_clean();
     ?>
 
-    <?php /* Remover essa primeira condicional */ ?>
-
         <?php if ($pagina_atual === "home") : ?>
             <?= $header ?>
         <?php else : ?>
             <div class="header-wrapper">
                 <?= $header ?>
                 <?php if (!empty($breadcrumbs)) : ?>
-                    <section class="breadcrumb-wrapper py-lg-4 bg-primary">
-                        <?php if (!empty($title)) : ?>
-                            <h1 class="h2 text-center text-white lh-1 mb-1">
-                                <?= $title ?>
-                            </h1>
-                        <?php endif; ?>
-                        <nav class="breadcrumb justify-content-center">
-                            <?php
-                            $i = -1;
-                            $breadcrumbsLength = count($breadcrumbs) - 1;
-                            foreach ($breadcrumbs as $breadcrumb) :
-                                $i++;
-                            ?>
-                                <?php if ($i !== $breadcrumbsLength) : ?>
-                                    <a class="breadcrumb-item" href="<?= !empty($breadcrumb['url']) ? $breadcrumb['url'] : "#"  ?>">
-                                        <span>
-                                            <?= !empty($breadcrumb['title']) ? $breadcrumb['title'] : "Página"  ?>
-                                        </span>
-                                    </a>
-                                <?php else : ?>
-                                    <span class="breadcrumb-item active" aria-current="page">
-                                        <span>
-                                            <?= !empty($breadcrumb['title']) ? $breadcrumb['title'] : "Página"  ?>
-                                        </span>
-                                    </span>
-                                <?php endif; ?>
-                            <?php endforeach; ?>
-                        </nav>
+                    <section class=""> 
+                        <div class="container header-wrapper">
+                            <div class="row col-12 d-flex">
+                                <div class="d-flex">
+                                    <h2>Cores sólidas</h2>
+                                </div>
+                                <div class="d-flex links justify-content-end">
+                                    <a href="" class="p1">Home </a>
+                                    <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" width="5px" alt="">
+                                    <a href="" class="p2"> Produtos</a>
+                                </div>
+                            </div>
+                        </div>
                     </section>
                 <?php endif; ?>
             </div>
