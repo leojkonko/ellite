@@ -2934,14 +2934,19 @@ textarea.form-control-lg {
   display: block;
 }
 
-@media (min-width: 992px) and (max-width: 1999px) {
+@media (min-width: 992px) and (max-width: 1200px) {
+  .dropdown-content {
+    margin-top: 85px !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1600px) {
   .dropdown-content {
     margin-top: 90px !important;
   }
 }
-@media (min-width: 1200px) and (max-width: 1981px) {
+@media (min-width: 1600px) and (max-width: 1981px) {
   .dropdown-content {
-    margin-top: 100px !important;
+    margin-top: 95px !important;
   }
 }
 @media (max-width: 575.98px) {
