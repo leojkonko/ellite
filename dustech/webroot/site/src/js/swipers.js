@@ -69,7 +69,7 @@ var swiper = new Swiper(".mySwiper-banner-teste", {
 
 
 var swiper = new Swiper(".mySwiper-banner", {
-    slidesPerView: 1,
+    slidesPerView: 2,
     navigation: {
         nextEl: ".banner .swiper-button-next",
         prevEl: ".banner .swiper-button-prev",

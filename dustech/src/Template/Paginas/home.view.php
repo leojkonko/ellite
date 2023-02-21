@@ -3,6 +3,7 @@
 <!--<section>
     <img src="<?= asset('/images/backgrounds/img_principal.svg') ?>" width="100%" height="100%" alt="">
 </section>-->
+<main>
     <section class="ratio ratio-6x9 ratio-lg-21x9 z-index-background">
         <picture>
             <source srcset="<?= asset('images/backgrounds/img_principal.svg') ?>" media="(min-width: 992px)">
@@ -52,7 +53,7 @@
     </section>
     
     <section class="section-treinamento">
-        <div class="row coluna">
+        <div class="row coluna py-2 py-lg-4">
             <div class=" col-md-6 col-sm-6 col-xs-12 col-12">
                 <img class="pistola" src="<?= asset('images/banners/pistola.png') ?>" width="90%" alt="">
             </div>
@@ -61,6 +62,9 @@
                     <h2>Treinamento <br><span class="">e Consultoria</span></h2>
                 </div>
                 <img src="<?= asset('images/banners/in-company-sect3.svg') ?>" class="mt-5" alt="">
+                    <div class="d-none w-100 img-mobile">
+                        <img src="<?= asset('images/banners/in-company-sect3.svg') ?>" class="mt-5" alt="">
+                    </div>
                 <div class="d-flex justify-content-start div-button">
                     <button class="btn btn-custom">Saiba Mais</button>
                 </div>
@@ -78,7 +82,7 @@
                                     <img src="<?= asset('images/banners/catalogo.svg') ?>" alt="">
                                 </h2>
                             </div>
-                            <div class="col-md-12 d-flex">
+                            <div class="col-md-12 d-flex justify-content-center">
                                 <button class="btn btn-black button1"></button>
                                 <button class="btn btn-black button2"><i class="ml-5 fa fa-download"></i></button>
                             </div>
@@ -145,9 +149,9 @@
 
 <section class="banner-teste diferenciais">
     <!-- Swiper -->
-<div class="">
-    <div class="col-md-12 d-flex justify-content-start text-diferenciais">Diferenciais</div>        
+<div class="">       
               <div class="swiper mySwiper-banner-teste col-10">
+              <div class="col-md-12 d-flex justify-content-start text-diferenciais">Diferenciais</div>
                  <div class="swiper-wrapper">
 
                         <?php foreach(range(0,9) as $i) : ?>
@@ -191,7 +195,7 @@
     
   </div>
 </section>
-
+</main>
 
 
 </body>

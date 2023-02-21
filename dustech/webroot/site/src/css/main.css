@@ -134,6 +134,7 @@
 }
 
 .header {
+  position: fixed;
   font-family: "Archivo", sans-serif;
   font-style: normal;
   font-weight: 100;
@@ -142,7 +143,7 @@
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
   background: rgba(32, 32, 32, 0.5);
   backdrop-filter: blur(12.5px);
-  position: absolute;
+  z-index: 999;
   width: 100%;
 }
 .header .logo {
@@ -156,6 +157,7 @@
 .header .menu li {
   display: flex;
   justify-content: center;
+  transition: border-bottom 0.3s ease;
   list-style: none;
   height: 100%;
 }
@@ -181,7 +183,7 @@
 }
 @media (min-width: 992px) {
   .header .container .div-menulateral {
-    justify-content: end;
+    justify-content: end !important;
   }
   .header .container .menu-div {
     justify-content: end;
@@ -240,6 +242,9 @@
   .menu {
     display: none;
   }
+  header {
+    position: absolute !important;
+  }
 }
 @media (min-width: 1600px) {
   .menu {
@@ -292,7 +297,6 @@
 }
 .footer .copyright {
   color: rgba(255, 255, 255, 0.8);
-  margin-right: 5px;
   border-top: 1px solid rgba(255, 255, 255, 0.8);
 }
 .footer .copyright div {
@@ -365,6 +369,10 @@
 @include media-hover - Fará o hover no lugar de utilizar .classe:hover (tambem será acima de 992px, ou seja, quando nao for mobile (pois no mobile
 não existe hover))
 */
+main {
+  overflow-x: hidden;
+}
+
 .produtos-destaques {
   background: linear-gradient(180deg, #202020 0%, #0D0D0D 100%);
   color: white;
@@ -404,8 +412,13 @@ não existe hover))
       //background-color: rgba($color: $white, 0.35);
   }*/
   position: relative !important;
-  --swiper-theme-color: #C44438 !important;
   padding-top: 30px !important;
+}
+.produtos-destaques .swiper .swiper-pagination1 .swiper-pagination-bullet-active {
+  background: #C44438 !important;
+}
+.produtos-destaques .swiper .swiper-pagination1 .swiper-pagination-bullet {
+  background: #b98a8a;
 }
 .produtos-destaques .swiper-button-next:after,
 .produtos-destaques .swiper-button-prev:after {
@@ -470,6 +483,9 @@ não existe hover))
 }
 
 @media (max-width: 575.98px) {
+  .produtos-destaques .cor {
+    margin: 15px 0px 0px 0px !important;
+  }
   .produtos-destaques .texto div {
     display: flex;
     justify-content: center;
@@ -480,8 +496,11 @@ não existe hover))
   .swiper-wrapper .swiper-slide {
     margin-top: 180px;
   }
+  .swiper-wrapper .swiper-slide .slide-img {
+    width: 100%;
+  }
   .swiper-wrapper .swiper-slide .slide-img img {
-    width: 120px;
+    width: 90%;
     border: 5px solid white;
     border-radius: 10px;
   }
@@ -578,10 +597,7 @@ não existe hover))
   position: absolute;
   width: 40%;
   margin-top: -70px;
-  margin-left: 0px;
-}
-.section-treinamento .coluna .text-consultoria {
-  margin-top: 50px;
+  margin-left: 0px !important;
 }
 .section-treinamento .coluna .text-consultoria .div-h2 {
   margin-left: 70px;
@@ -600,18 +616,26 @@ não existe hover))
 
 @media (max-width: 449.99px) {
   .coluna {
-    margin-right: 10px;
-  }
-  .text-consultoria {
-    margin-left: -30px;
-  }
-  .coluna {
     background-image: url(../../../../webroot/site/src/images/backgrounds/bg-red.svg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 50%;
+  }
+  .text-consultoria .img-mobile {
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+  }
+  .text-consultoria .img-mobile img {
+    display: block !important;
+    margin-top: 0px !important;
+    position: relative !important;
+    width: 60% !important;
+    justify-content: center;
+    filter: drop-shadow(0px 4px 4px black);
   }
   .text-consultoria img {
-    display: none;
+    display: none !important;
   }
   .coluna img {
     /*padding-top: 50px;
@@ -620,42 +644,58 @@ não existe hover))
   }
   .text-consultoria .div-button {
     margin-top: 10px;
-    padding-left: 160px;
-    margin-bottom: 30px;
+    justify-content: center;
+  }
+  .text-consultoria .div-h2 {
+    margin-left: 0px !important;
+    justify-content: center !important;
+    margin-left: 0px !important;
+    width: 100% !important;
   }
   .text-consultoria .div-h2 h2 {
     font-size: 31px !important;
-    padding-left: 30px;
   }
 }
 @media (min-width: 450px) and (max-width: 575.98px) {
-  .text-consultoria {
-    margin-top: 60px !important;
-    padding-left: 60px;
-    margin-bottom: 30px;
-  }
   .coluna {
     background-image: url(../../../../webroot/site/src/images/backgrounds/bg-red.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    margin-right: 10px;
+    background-position: 50%;
+  }
+  .text-consultoria .img-mobile {
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+  }
+  .text-consultoria .img-mobile img {
+    display: block !important;
+    margin-top: 0px !important;
+    position: relative !important;
+    width: 60% !important;
+    justify-content: center;
+    filter: drop-shadow(0px 4px 4px black);
   }
   .text-consultoria img {
     display: none !important;
   }
   .coluna img {
+    /*padding-top: 50px;
+    padding-left: -100px;*/
     display: none;
-    /*justify-content: center;
-    padding-top: 50px;
-    margin-left: 100px !important;
-    width: 55% !important;*/
   }
   .text-consultoria .div-button {
-    margin-top: 20px;
-    margin-left: 130px;
+    margin-top: 10px;
+    justify-content: center;
+  }
+  .text-consultoria .div-h2 {
+    margin-left: 0px !important;
+    justify-content: center !important;
+    margin-left: 0px !important;
+    width: 100% !important;
   }
   .text-consultoria .div-h2 h2 {
-    font-size: 38px !important;
+    font-size: 31px !important;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -844,9 +884,35 @@ não existe hover))
 }
 
 @media (max-width: 449.99px) {
+  .catalogo {
+    background-image: url(../../../../webroot/site/src/images/backgrounds/banner-catalogo.svg);
+    background-position: 75% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+  }
+  .catalogo .container {
+    background: rgba(83, 76, 76, 0.4);
+    z-index: 2;
+  }
+  .catalogo::before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: blur(2px);
+    color: white;
+    z-index: -1;
+  }
+  .catalogo::before .container {
+    z-index: 1;
+    position: relative;
+  }
   .div-catalogo {
     margin-top: 150px !important;
-    padding-left: 10px;
     margin-bottom: 30px;
     width: 100%;
     display: flex;
@@ -858,7 +924,6 @@ não existe hover))
   }
   .div-catalogo img {
     width: 55%;
-    margin-left: 50px;
     margin-top: -40px;
   }
   .div-catalogo button {
@@ -885,7 +950,6 @@ não existe hover))
 @media (min-width: 450px) and (max-width: 575.98px) {
   .div-catalogo {
     margin-top: 160px !important;
-    padding-left: 50px;
     margin-bottom: 30px;
   }
   .div-catalogo h2 {
@@ -1089,10 +1153,10 @@ não existe hover))
   font-family: "Archivo";
   font-style: normal;
   font-weight: 600;
-  font-size: 128px;
+  font-size: 85px;
   line-height: 100%;
   color: rgba(255, 255, 255, 0.2);
-  overflow-x: hidden;
+  padding-left: 10px;
 }
 .diferenciais .swiper-slide {
   margin-bottom: 40px;
@@ -1187,10 +1251,10 @@ não existe hover))
 @media (min-width: 578px) and (max-width: 767.98px) {
   .diferenciais .swiper-button-prev,
 .diferenciais .swiper-button-next {
-    margin-top: -80px !important;
+    margin-top: 0px !important;
   }
   .diferenciais .text-diferenciais {
-    margin-top: 60px;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     font-size: 75px !important;
@@ -1198,7 +1262,7 @@ não existe hover))
   .diferenciais .swiper-slide .icone img {
     border-radius: 8px;
     width: 58%;
-    margin-top: 60px;
+    margin-top: 0px;
   }
   .diferenciais .swiper-slide .titulo {
     display: flex;
@@ -1223,12 +1287,12 @@ não existe hover))
   .icones {
     display: none;
   }
-  .diferenciais .swiper-diferenciais .swiper-button-next,
-.swiper-button-prev {
+  .diferenciais .swiper-button-next,
+.diferenciais .swiper-button-prev {
     display: block;
+    margin-top: 30px;
   }
   .diferenciais .text-diferenciais {
-    padding-left: 90px;
     margin-top: 60px;
     margin-bottom: -100px;
     font-size: 100px !important;
@@ -1258,10 +1322,9 @@ não existe hover))
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .diferenciais .swiper-button-prev,
 .diferenciais .swiper-button-next {
-    margin-top: -80px !important;
+    margin-top: 0px !important;
   }
   .text-diferenciais {
-    padding-left: 90px;
     width: 100%;
     margin-top: 60px;
     font-size: 100px !important;
@@ -1291,12 +1354,13 @@ não existe hover))
   }
 }
 @media (min-width: 1200px) and (max-width: 1299.98px) {
-  .diferenciais .swiper-diferenciais .swiper-button-next,
-.swiper-button-prev {
-    margin-top: -80px !important;
+  .diferenciais .swiper-button-next {
+    margin-top: 20px !important;
+  }
+  .diferenciais .swiper-button-prev {
+    margin-top: 20px !important;
   }
   .diferenciais .text-diferenciais {
-    padding-left: 150px;
     margin-top: 60px;
   }
   .diferenciais .swiper-slide .icone img {
@@ -1326,10 +1390,9 @@ não existe hover))
 @media (min-width: 1300px) and (max-width: 1599px) {
   .diferenciais .swiper-button-prev,
 .diferenciais .swiper-button-next {
-    margin-top: -80px !important;
+    margin-top: 0px !important;
   }
   .diferenciais .text-diferenciais {
-    padding-left: 120px;
     margin-top: 60px;
   }
   .diferenciais .swiper-slide .conteudo .titulo {
@@ -1357,10 +1420,9 @@ não existe hover))
 @media (min-width: 1600px) and (max-width: 1981px) {
   .diferenciais .swiper-button-prev,
 .diferenciais .swiper-button-next {
-    margin-top: -80px !important;
+    margin-top: 30px !important;
   }
   .diferenciais .text-diferenciais {
-    padding-left: 180px;
     margin-top: 100px;
   }
   .diferenciais .swiper-slide .conteudo .titulo {

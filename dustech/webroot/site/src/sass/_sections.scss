@@ -9,6 +9,9 @@ não existe hover))
 
 
 // ----------------------------------------------------------------------produtos destaques  
+main {
+    overflow-x: hidden;
+}
 
 .produtos-destaques {
     //overflow-x: hidden;
@@ -54,7 +57,15 @@ não existe hover))
             }*/
 
             position: relative !important;
-            --swiper-theme-color: #C44438 !important;
+
+            & .swiper-pagination-bullet-active {
+                background: #C44438 !important;
+            }
+
+            & .swiper-pagination-bullet {
+                background: #b98a8a;
+            }
+
             padding-top: 30px !important;
         }
     }
@@ -136,6 +147,10 @@ não existe hover))
 @media (max-width: 575.98px) {
 
     .produtos-destaques {
+        & .cor {
+            margin: 15px 0px 0px 0px !important;
+
+        }
 
         & .texto {
             & div {
@@ -155,8 +170,12 @@ não existe hover))
 
     }
 
+    .swiper-wrapper .swiper-slide .slide-img {
+        width: 100%;
+    }
+
     .swiper-wrapper .swiper-slide .slide-img img {
-        width: 120px;
+        width: 90%;
         border: 5px solid white;
         border-radius: 10px;
     }
@@ -293,11 +312,10 @@ não existe hover))
             position: absolute;
             width: 40%;
             margin-top: -70px;
-            margin-left: 0px;
+            margin-left: 0px !important;
         }
 
         & .text-consultoria {
-            margin-top: 50px;
 
             & .div-h2 {
                 margin-left: 70px;
@@ -320,23 +338,36 @@ não existe hover))
 }
 
 @media (max-width: 449.99px) {
-    .coluna {
-        margin-right: 10px;
-    }
-
-    .text-consultoria {
-        margin-left: -30px;
-    }
 
     .coluna {
         background-image: url(../../../../webroot/site/src/images/backgrounds/bg-red.svg);
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: 50%;
     }
 
-    .text-consultoria img {
-        display: none;
+    .text-consultoria {
+        & .img-mobile {
+            display: flex;
+            justify-content: center;
+            margin-top: -10px;
+
+            & img {
+                display: block !important;
+                margin-top: 0px !important;
+                position: relative !important;
+                width: 60% !important;
+                justify-content: center;
+                filter: drop-shadow(0px 4px 4px black);
+            }
+        }
+
+        & img {
+            display: none !important;
+
+        }
     }
+
 
     .coluna img {
         /*padding-top: 50px;
@@ -346,50 +377,75 @@ não existe hover))
 
     .text-consultoria .div-button {
         margin-top: 10px;
-        padding-left: 160px;
-        margin-bottom: 30px;
+        justify-content: center;
+        //margin-bottom: 30px;
     }
 
-    .text-consultoria .div-h2 h2 {
-        font-size: 31px !important;
-        padding-left: 30px;
+    .text-consultoria .div-h2 {
+        margin-left: 0px !important;
+        justify-content: center !important;
+        margin-left: 0px !important;
+        width: 100% !important;
+
+        & h2 {
+            font-size: 31px !important;
+        }
     }
 
 }
 
 @media (min-width: 450px) and (max-width: 575.98px) {
-    .text-consultoria {
-        margin-top: 60px !important;
-        padding-left: 60px;
-        margin-bottom: 30px;
-    }
-
     .coluna {
         background-image: url(../../../../webroot/site/src/images/backgrounds/bg-red.svg);
         background-size: cover;
         background-repeat: no-repeat;
-        margin-right: 10px;
+        background-position: 50%;
     }
 
-    .text-consultoria img {
-        display: none !important;
+    .text-consultoria {
+        & .img-mobile {
+            display: flex;
+            justify-content: center;
+            margin-top: -10px;
+
+            & img {
+                display: block !important;
+                margin-top: 0px !important;
+                position: relative !important;
+                width: 60% !important;
+                justify-content: center;
+                filter: drop-shadow(0px 4px 4px black);
+            }
+        }
+
+        & img {
+            display: none !important;
+
+        }
     }
+
 
     .coluna img {
+        /*padding-top: 50px;
+        padding-left: -100px;*/
         display: none;
-        /*justify-content: center;
-        padding-top: 50px;
-        margin-left: 100px !important;
-        width: 55% !important;*/
     }
 
     .text-consultoria .div-button {
-        margin-top: 20px;
-        margin-left: 130px;
+        margin-top: 10px;
+        justify-content: center;
+        //margin-bottom: 30px;
     }
 
-    .text-consultoria .div-h2 h2 {
-        font-size: 38px !important;
+    .text-consultoria .div-h2 {
+        margin-left: 0px !important;
+        justify-content: center !important;
+        margin-left: 0px !important;
+        width: 100% !important;
+
+        & h2 {
+            font-size: 31px !important;
+        }
     }
 
 }
@@ -645,9 +701,43 @@ não existe hover))
 }
 
 @media (max-width: 449.99px) {
+    .catalogo {
+        background-image: url(../../../../webroot/site/src/images/backgrounds/banner-catalogo.svg);
+        background-position: 75% 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        //filter: blur(2px);
+        z-index: -1;
+
+        & .container {
+            background: rgba(83, 76, 76, 0.4);
+            z-index: 2;
+            //filter: blur(0px) !important;
+        }
+    }
+
+    .catalogo::before {
+        content: '';
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        filter: blur(2px);
+        color: white;
+        z-index: -1;
+        //background-color: white;
+
+        & .container {
+            z-index: 1;
+            position: relative;
+        }
+    }
+
     .div-catalogo {
         margin-top: 150px !important;
-        padding-left: 10px;
+        //padding-left: 10px;
         margin-bottom: 30px;
         width: 100%;
         display: flex;
@@ -660,7 +750,6 @@ não existe hover))
 
         & img {
             width: 55%;
-            margin-left: 50px;
             margin-top: -40px;
         }
 
@@ -696,7 +785,7 @@ não existe hover))
 @media (min-width: 450px) and (max-width: 575.98px) {
     .div-catalogo {
         margin-top: 160px !important;
-        padding-left: 50px;
+        //padding-left: 50px;
         margin-bottom: 30px;
 
         & h2 {
@@ -966,10 +1055,10 @@ não existe hover))
         font-family: 'Archivo';
         font-style: normal;
         font-weight: 600;
-        font-size: 128px;
+        font-size: 85px;
         line-height: 100%;
         color: rgba(255, 255, 255, 0.2);
-        overflow-x: hidden;
+        padding-left: 10px;
     }
 
     & .swiper-slide {
@@ -1101,13 +1190,13 @@ não existe hover))
 
         & .swiper-button-prev,
         .swiper-button-next {
-            margin-top: -80px !important;
+            margin-top: 0px !important;
         }
     }
 
     .diferenciais {
         .text-diferenciais {
-            margin-top: 60px;
+            margin-top: 40px;
             display: flex;
             justify-content: center;
             font-size: 75px !important;
@@ -1120,7 +1209,7 @@ não existe hover))
                     //padding: 10px 30px !important;
                     //margin-bottom: 20px;
                     width: 58%;
-                    margin-top: 60px;
+                    margin-top: 0px;
                 }
             }
 
@@ -1154,14 +1243,17 @@ não existe hover))
         display: none;
     }
 
-    .diferenciais .swiper-diferenciais .swiper-button-next,
-    .swiper-button-prev {
-        display: block;
+    .diferenciais {
+
+        & .swiper-button-next,
+        .swiper-button-prev {
+            display: block;
+            margin-top: 30px;
+        }
     }
 
     .diferenciais {
         .text-diferenciais {
-            padding-left: 90px;
             margin-top: 60px;
             margin-bottom: -100px;
             font-size: 100px !important;
@@ -1207,12 +1299,11 @@ não existe hover))
 
         & .swiper-button-prev,
         .swiper-button-next {
-            margin-top: -80px !important;
+            margin-top: 0px !important;
         }
     }
 
     .text-diferenciais {
-        padding-left: 90px;
         width: 100%;
         margin-top: 60px;
         font-size: 100px !important;
@@ -1257,14 +1348,16 @@ não existe hover))
 
 @media (min-width: 1200px) and (max-width: 1299.98px) {
 
-    .diferenciais .swiper-diferenciais .swiper-button-next,
-    .swiper-button-prev {
-        margin-top: -80px !important;
+    .diferenciais .swiper-button-next {
+        margin-top: 20px !important;
+    }
+
+    .diferenciais .swiper-button-prev {
+        margin-top: 20px !important;
     }
 
     .diferenciais {
         .text-diferenciais {
-            padding-left: 150px;
             margin-top: 60px;
         }
 
@@ -1309,13 +1402,12 @@ não existe hover))
 
         & .swiper-button-prev,
         .swiper-button-next {
-            margin-top: -80px !important;
+            margin-top: 0px !important;
         }
     }
 
     .diferenciais {
         .text-diferenciais {
-            padding-left: 120px;
             margin-top: 60px;
         }
 
@@ -1359,13 +1451,12 @@ não existe hover))
 
         & .swiper-button-prev,
         .swiper-button-next {
-            margin-top: -80px !important;
+            margin-top: 30px !important;
         }
     }
 
     .diferenciais {
         .text-diferenciais {
-            padding-left: 180px;
             margin-top: 100px;
         }
 

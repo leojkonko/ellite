@@ -10,7 +10,8 @@
     <meta name="author" content="Agência Ellite Digital">
 
     <?php /* ==== Favicons ==== */ ?>
-    <link rel="apple-touch-icon" sizes="57x57" href="<?= asset('images/favicons/apple-icon-57x57.png') ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= asset('images/favicons/favicon.ico') ?>">
+    <!--<link rel="apple-touch-icon" sizes="57x57" href="<?= asset('images/favicons/apple-icon-57x57.png') ?>">
     <link rel="apple-touch-icon" sizes="60x60" href="<?= asset('images/favicons/apple-icon-60x60.png') ?>">
     <link rel="apple-touch-icon" sizes="72x72" href="<?= asset('images/favicons/apple-icon-72x72.png') ?>">
     <link rel="apple-touch-icon" sizes="76x76" href="<?= asset('images/favicons/apple-icon-76x76.png') ?>">
@@ -22,7 +23,7 @@
     <link rel="icon" type="image/png" sizes="192x192" href="<?= asset('images/favicons/android-icon-192x192.png') ?>">
     <link rel="icon" type="image/png" sizes="32x32" href="<?= asset('images/favicons/favicon-32x32.png') ?>">
     <link rel="icon" type="image/png" sizes="96x96" href="<?= asset('images/favicons/favicon-96x96.png') ?>">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= asset('images/favicons/favicon-16x16.png') ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= asset('images/favicons/favicon-16x16.png') ?>">-->
     <link rel="manifest" href="<?= asset('images/favicons/manifest.json') ?>">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="<?= asset('images/favicons/ms-icon-144x144.png') ?>">
@@ -68,7 +69,7 @@
                 <ul class="d-flex align-items-center menu d-lg-flex d-md-none d-sm-none d-xs-none ">
                     <li><a href="/">Empresa</a></li>
                     <li class="dropdown">
-                        <button class="dropdown-button">Produtos
+                        <button class="dropdown-button gap-0-50">Produtos
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flecha w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                         </svg>
@@ -82,7 +83,7 @@
                     <li><a href="/">Blog</a></li>
                     <li><a href="/">Contato</a></li>    
                 </ul>
-                <button class="btn d-lg-none d-xl-none d-md-flex d-sm-flex d-xs-flex " type="button"
+                <button class="btn me-1 d-lg-none d-md-flex d-sm-flex d-xs-flex p-0" type="button"
                     data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="4" y="4" width="16" height="4" fill="white" />
@@ -90,11 +91,11 @@
                         <rect x="4" y="20" width="16" height="4" fill="white" />
                     </svg>
                 </button>
-                <div class=" d-flex d-lg-none d-xl-none d-md-flex d-sm-flex d-xs-flex align-items-center div-menulateral">
-                     <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                <div class=" d-flex d-lg-none d-md-flex d-sm-flex d-xs-flex align-items-center col-lg-2 justify-content-end div-menulateral">
+                     <button class="btn p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                     aria-controls="offcanvasRight">
                         <img src="<?= asset('/images/icones/lupa.svg') ?>" width="100%" alt="">
-                    </button>
+                </button>
             </div>
             </div>
 
