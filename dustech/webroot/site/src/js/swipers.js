@@ -89,3 +89,38 @@ var swiper = new Swiper(".mySwiper-banner", {
         },
     }
 });
+
+var swiper = new Swiper(".produtos-detalhe-swiper", {
+    slidesPerView: 1,
+    navigation: {
+        nextEl: ".produtos-detalhe-swiper .swiper-button-next",
+        prevEl: ".produtos-detalhe-swiper .swiper-button-prev",
+    },
+});
+
+
+var swiper = new Swiper(".produtos-relacionados-swiper", {
+    //spaceBetween: 20,
+    slidesPerView: 2,
+    navigation: {
+        nextEl: ".produtos-relacionados-swiper .swiper-button-next",
+        prevEl: ".produtos-relacionados-swiper .swiper-button-prev",
+    },
+    breakpoints: {
+        1500: {
+            slidesPerView: 5,
+        },
+        1200: {
+            slidesPerView: 4,
+        },
+        992: {
+            slidesPerView: 3,
+        },
+        767: {
+            slidesPerView: 2,
+        },
+        576: {
+            slidesPerView: 2,
+        },
+    }
+});

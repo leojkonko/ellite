@@ -52,20 +52,20 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">    
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 -->
-    
+<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
 
     <?php ob_start() ?>
-<header class="header">
+<header class="header <?= $pagina_atual !== 'home' ? 'background-internas' : '' ?>">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-xl-3 col-md-3 col-sm-3 col-3 logo">
                 <a href="/" class=""><img src="<?= asset('/images/logos/logo.svg') ?>" width="70%"
                         alt=""></a>
             </div>
-            <div class="col-lg-8 col-xl-8 col-3 d-flex justify-content-center align-items-center menu-div">
+            <div class="col-lg-7 col-xl-7 col-3 d-flex justify-content-center align-items-center menu-div">
                 <ul class="d-flex align-items-center menu d-lg-flex d-md-none d-sm-none d-xs-none ">
                     <li><a href="/">Empresa</a></li>
                     <li class="dropdown">
@@ -81,7 +81,7 @@
                     </li>
                     <li><a href="/">Treinamento</a></li>
                     <li><a href="/">Blog</a></li>
-                    <li><a href="/">Contato</a></li>    
+                    <li><a href="/contato">Contato</a></li>    
                 </ul>
                 <button class="btn me-1 d-lg-none d-md-flex d-sm-flex d-xs-flex p-0" type="button"
                     data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
@@ -91,17 +91,21 @@
                         <rect x="4" y="20" width="16" height="4" fill="white" />
                     </svg>
                 </button>
-                <div class=" d-flex d-lg-none d-md-flex d-sm-flex d-xs-flex align-items-center col-lg-2 justify-content-end div-menulateral">
+                <div class="align-items-center col-lg-2 justify-content-end div-menulateral">
+                     <button class="btn p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight">
+                        <img src="<?= asset('/images/icones/lupa.svg') ?>" width="100%" alt="">
+                </button>
+                </div>
+            </div>
+            <div class="d-none d-lg-flex col-2 justify-content-end div-menulateral2">
                      <button class="btn p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                     aria-controls="offcanvasRight">
                         <img src="<?= asset('/images/icones/lupa.svg') ?>" width="100%" alt="">
                 </button>
             </div>
-            </div>
-
-            
-        </div>
-    </div>
+        </div><!-- row -->
+    </div><!-- container -->
 
 </header>
 <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
@@ -128,7 +132,6 @@
 
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header">
-
 
         <button type="button" class="btn-close text-reset text-light" data-bs-dismiss="offcanvas"
             aria-label="Close">X</button>
@@ -165,27 +168,78 @@
     $header = ob_get_contents();
     ob_end_clean();
     ?>
-
-        <?php if ($pagina_atual === "home") : ?>
+<?php if ($pagina_atual === "home") : ?>
+    <?= $header ?>
+    <?php endif; ?>
+    <?php if ($pagina_atual === "produtos") : ?>
             <?= $header ?>
-        <?php else : ?>
             <div class="header-wrapper">
                 <?= $header ?>
                 <?php if (!empty($breadcrumbs)) : ?>
                     <section class=""> 
                         <div class="container header-wrapper">
-                            <div class="row col-12 d-flex">
-                                <div class="d-flex">
+                            <div class="row d-flex">
+                                <div class="d-flex titulo">
                                     <h2>Cores sólidas</h2>
                                 </div>
                                 <div class="d-flex links justify-content-end">
                                     <a href="" class="p1">Home </a>
-                                    <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" width="5px" alt="">
+                                    <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" class="mx-0-50" width="5px" alt="">
                                     <a href="" class="p2"> Produtos</a>
                                 </div>
                             </div>
                         </div>
                     </section>
                 <?php endif; ?>
-            </div>
+            </div>         
         <?php endif; ?>
+
+    <?php //echo ($pagina_atual); ?>
+    <?php if ($pagina_atual === "produto_detalhe") : ?>
+            <?= $header ?>
+            <div class="header-wrapper">
+                <?php //if (!empty($breadcrumbs)) : ?>
+                    <section class=""> 
+                        <div class="container header-wrapper">
+                            <div class="row d-flex titulo-detalhes">
+                                <div class="d-flex links justify-content-end ">
+                                    <a href="" class="p1">Home </a>
+                                    <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" class="mx-0-50" width="5px" alt="">
+                                    <a href="" class="p2"> Produtos</a>
+                                    <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" class="mx-0-50" width="5px" alt="">
+                                    <a href="" class="p2"> C1101</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                <?php //endif; ?>
+            </div>         
+        <?php endif; ?>
+
+ <?php if ($pagina_atual === "contato") : ?>
+    <?= $header ?>
+    <?php endif; ?>
+    <?php if ($pagina_atual === "contato") : ?>
+            <?= $header ?>
+            <div class="header-wrapper">
+                <?= $header ?>
+                <?php if (!empty($breadcrumbs)) : ?>
+                    <section class=""> 
+                        <div class="container header-wrapper">
+                            <div class="row d-flex">
+                                <div class="d-flex titulo">
+                                    <h2>Contato</h2>
+                                </div>
+                                <div class="d-flex links justify-content-end">
+                                    <a href="" class="p1">Home </a>
+                                    <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" class="mx-0-50" width="5px" alt="">
+                                    <a href="" class="p2"> Contato</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                <?php endif; ?>
+            </div>         
+        <?php endif; ?>
+
+

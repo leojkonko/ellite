@@ -19,7 +19,7 @@
                     class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 d-flex align-items-center justify-content-center">
                     <ul class="infos p-0">
                         <li>
-                            <a href="">
+                            <a href="" target="_blank">
                                 <img src="<?= asset('/images/icones/localizacao.svg') ?>" alt="">
                             BR 470, Km222 | Pavilhão 1 - Garibaldina, Garibaldi - RS, 95720-000
                             </a>
@@ -41,13 +41,13 @@
                 </div>
                 <div class="col-lg-1 col-md-1 col-sm-2 col-xs-12 col-12 d-flex align-items-center justify-content-center">
                     <ul class="infos redes p-0">
-                        <li><a href=""><img src="<?= asset('/images/icones/facebook.svg') ?>"alt=""></a>
+                        <li><a href="" target="_blank"><img src="<?= asset('/images/icones/facebook.svg') ?>"alt=""></a>
                         </li>
-                        <li><a href=""><img src="<?= asset('/images/icones/instagram.svg') ?>" alt=""></a>
+                        <li><a href="" target="_blank"><img src="<?= asset('/images/icones/instagram.svg') ?>" alt=""></a>
                         </li>
-                        <li><a href=""><img src="<?= asset('/images/icones/youtube.svg') ?>"alt=""></a>
+                        <li><a href="" target="_blank"><img src="<?= asset('/images/icones/youtube.svg') ?>"alt=""></a>
                         </li>
-                        <li><a href=""><img src="<?= asset('/images/icones/linkedin.svg') ?>"alt=""></a>
+                        <li><a href="" target="_blank"><img src="<?= asset('/images/icones/linkedin.svg') ?>"alt=""></a>
                         </li>
                     </ul>
                 </div>

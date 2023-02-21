@@ -1,4 +1,4 @@
-<main id="produto" class="py-3 py-lg-4" style="background: #F0F0F0;">
+<main id="produto" class="py-3 py-lg-4" style="background: #F0F0F0;overflow-x:hidden;">
 
 <section class="catalogo-produtos my-4">
     <div class="container opa">
@@ -41,7 +41,7 @@
         <div class="row">
             <?php foreach(range(0,14) as $i) : ?>
                     <div class="col-2 cards-conteudo">
-                        <a href="http://google.com.br">
+                        <a href="/produto-detalhe">
                                 <div class="cor">
                                 <span>Cor Sólida</span>
                             </div>

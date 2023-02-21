@@ -1,3 +1,8 @@
+.background-internas {
+    background: linear-gradient(180deg, #2B2B2B 0%, #0D0D0D 100%) !important;
+    backdrop-filter: blur(12.5px) !important;
+}
+
 .header {
     //overflow-x: hidden;
     position: fixed;
@@ -136,6 +141,17 @@
                 padding-left: 30px;
                 width: 70%;
             }
+        }
+    }
+
+    @media (min-width: 992px) {
+        & .div-menulateral {
+            border: 1px solid red;
+            display: none !important;
+        }
+
+        & .div-menulateral2 {
+            display: flex;
         }
     }
 }

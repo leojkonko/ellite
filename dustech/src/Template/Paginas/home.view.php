@@ -1,8 +1,5 @@
 
 
-<!--<section>
-    <img src="<?= asset('/images/backgrounds/img_principal.svg') ?>" width="100%" height="100%" alt="">
-</section>-->
 <main>
     <section class="ratio ratio-6x9 ratio-lg-21x9 z-index-background">
         <picture>
@@ -19,7 +16,7 @@
                         <h2>Produtos Destaques</h2>
                     </div>
                     <div>
-                        <button class="btn btn-custom">Veja Todos</button>
+                        <button class="btn btn-custom"><a href="/produtos">Veja Todos</a></button>
                     </div>
                 </div>
                 <div class="col-lg-10 col-md-12 col-sm-12">
@@ -28,7 +25,7 @@
                             <?php foreach(range(0,9) as $i) : ?>
                                 <div class="swiper-slide h-100">
                                     <div class="slide-img">
-                                    <a href="http://google.com.br">
+                                    <a href="/produtos">
                                         <div class="cor">
                                             <span>Cor Sólida</span>
                                         </div>
