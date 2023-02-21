@@ -1728,6 +1728,35 @@ main {
 
 @media (min-width: 0px) and (max-width: 576px) {
     .catalogo-produtos {
+        position: relative;
+        color: white;
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            background-image: url(../../../../webroot/site/src/images/backgrounds/catalogo-produtos.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 75%;
+            filter: blur(2px);
+            z-index: -1;
+        }
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            background-color: black;
+            filter: opacity(0.65);
+            z-index: -1;
+        }
 
         & .div-titulo {
             text-align: center;
