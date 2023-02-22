@@ -4216,6 +4216,16 @@ textarea.form-control-lg {
   border-right: 1px solid rgba(0, 0, 0, 0.2);
   transform: translateX(-100%);
 }
+.offcanvas-start .button-cor {
+  position: absolute;
+  top: 15px;
+  right: 0px;
+  padding: 6px 10px 12px 16px;
+}
+.offcanvas-start .btn-categorias {
+  border-radius: 5px !important;
+  padding: 20px 40px;
+}
 
 .offcanvas-end {
   top: 0;

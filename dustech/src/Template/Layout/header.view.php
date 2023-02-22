@@ -80,7 +80,7 @@
                         </ul>
                     </li>
                     <li><a href="/">Treinamento</a></li>
-                    <li><a href="/">Blog</a></li>
+                    <li><a href="/blog">Blog</a></li>
                     <li><a href="/contato">Contato</a></li>    
                 </ul>
                 <button class="btn me-1 d-lg-none d-md-flex d-sm-flex d-xs-flex p-0" type="button"
@@ -234,6 +234,33 @@
                                     <a href="" class="p1">Home </a>
                                     <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" class="mx-0-50" width="5px" alt="">
                                     <a href="" class="p2"> Contato</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                <?php endif; ?>
+            </div>         
+        <?php endif; ?>
+
+
+ <?php if ($pagina_atual === "blog") : ?>
+    <?= $header ?>
+    <?php endif; ?>
+    <?php if ($pagina_atual === "blog") : ?>
+            <?= $header ?>
+            <div class="header-wrapper">
+                <?= $header ?>
+                <?php if (!empty($breadcrumbs)) : ?>
+                    <section class=""> 
+                        <div class="container header-wrapper">
+                            <div class="row d-flex">
+                                <div class="d-flex titulo">
+                                    <h2>Blog</h2>
+                                </div>
+                                <div class="d-flex links justify-content-end">
+                                    <a href="" class="p1">Home </a>
+                                    <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" class="mx-0-50" width="5px" alt="">
+                                    <a href="" class="p2"> Blog</a>
                                 </div>
                             </div>
                         </div>

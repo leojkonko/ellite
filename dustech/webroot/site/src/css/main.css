@@ -448,6 +448,68 @@
   }
 }
 
+#blog {
+  background: #F0F0F0;
+}
+#blog .blog-card:hover {
+  margin-top: -20px;
+  background: #F0F0F0;
+}
+#blog .blog-card:hover h4 {
+  color: #c44438;
+}
+#blog .alinhamento {
+  justify-content: end;
+}
+#blog .div-button2 {
+  display: none;
+}
+#blog .div-input {
+  margin-right: 50px;
+}
+#blog .div-input input {
+  border: none;
+  border-bottom: 1px solid #202020;
+  padding: 8px 0px;
+  transition: border-bottom 0.1s ease-in-out 0s;
+  background-color: #f0f0f0;
+}
+#blog .div-input input:focus {
+  outline: none;
+  border-bottom: 2px solid black;
+}
+#blog .div-input input:focus::placeholder {
+  color: black;
+}
+#blog .div-input img {
+  cursor: pointer;
+}
+#blog .btn-busca {
+  border: 1.5px solid #202020;
+  border-radius: 5px;
+  padding: 12px 20px;
+  margin-top: -10px;
+}
+#blog .btn-busca img {
+  padding-right: 14px;
+}
+@media (max-width: 576px) {
+  #blog .row .alinhamento {
+    justify-content: center !important;
+  }
+  #blog .row .alinhamento .div-input {
+    margin-left: 70px;
+  }
+  #blog .row .alinhamento .div-button {
+    display: none;
+  }
+  #blog .row .div-button2 {
+    display: flex !important;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+}
+
 /*
 - No sass, no lugar de @media, existe um mixin do proprio bootstrap: 
 @include media-breakpoint-up(lg) - Maior que LG ou 992px
