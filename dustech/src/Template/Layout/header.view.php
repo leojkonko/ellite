@@ -67,7 +67,7 @@
             </div>
             <div class="col-lg-7 col-xl-7 col-3 d-flex justify-content-center align-items-center menu-div">
                 <ul class="d-flex align-items-center menu d-lg-flex d-md-none d-sm-none d-xs-none ">
-                    <li><a href="/">Empresa</a></li>
+                    <li><a href="/empresa">Empresa</a></li>
                     <li class="dropdown">
                         <button class="dropdown-button gap-0-50">Produtos
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flecha w-6 h-6">
@@ -261,6 +261,34 @@
                                     <a href="" class="p1">Home </a>
                                     <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" class="mx-0-50" width="5px" alt="">
                                     <a href="" class="p2"> Blog</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                <?php endif; ?>
+            </div>         
+        <?php endif; ?>
+
+
+
+ <?php if ($pagina_atual === "empresa") : ?>
+    <?= $header ?>
+    <?php endif; ?>
+    <?php if ($pagina_atual === "empresa") : ?>
+            <?= $header ?>
+            <div class="header-wrapper">
+                <?= $header ?>
+                <?php if (!empty($breadcrumbs)) : ?>
+                    <section class=""> 
+                        <div class="container header-wrapper">
+                            <div class="row d-flex">
+                                <div class="d-flex titulo">
+                                    <h2>Empresa</h2>
+                                </div>
+                                <div class="d-flex links justify-content-end">
+                                    <a href="" class="p1">Home </a>
+                                    <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" class="mx-0-50" width="5px" alt="">
+                                    <a href="" class="p2"> Empresa</a>
                                 </div>
                             </div>
                         </div>

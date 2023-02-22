@@ -124,3 +124,9 @@ var swiper = new Swiper(".produtos-relacionados-swiper", {
         },
     }
 });
+
+var swiper = new Swiper(".mySwiper-empresa", {
+    pagination: {
+        el: ".mySwiper-empresa .swiper-pagination",
+    },
+});
