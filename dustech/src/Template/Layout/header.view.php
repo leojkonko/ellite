@@ -75,11 +75,11 @@
                         </svg>
                         </button>
                         <ul class="dropdown-content">
-                            <li href="#"><a href="">Cores sólidas</a></li>
-                            <li href="#"><a href="">Cores metálicas</a></li>
+                            <li><a href="/produtos">Cores sólidas</a></li>
+                            <li><a href="/produtos">Cores metálicas</a></li>
                         </ul>
                     </li>
-                    <li><a href="/">Treinamento</a></li>
+                    <li><a href="/treinamento">Treinamento</a></li>
                     <li><a href="/blog">Blog</a></li>
                     <li><a href="/contato">Contato</a></li>    
                 </ul>
@@ -118,8 +118,8 @@
                 <li><a href="/">Empresa</a></li>
                 <li><a href="/">Produtos</a>
                     <div class="mt-1">
-                        <button class="btn btn-light text-dark">Cor sólida</button>
-                        <button class="btn  btn-outline-light ">Cor metálica</button>
+                        <button class="btn btn-light text-dark cor-solida"><a href="/produtos" class="text-dark">Cor sólida</a></button>
+                        <button class="btn  btn-outline-light "><a href="/produtos">Cor metálica</a></button>
                     </div>
                 </li>
                 <li><a href="/">Treinamento</a></li>
@@ -289,6 +289,32 @@
                                     <a href="" class="p1">Home </a>
                                     <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" class="mx-0-50" width="5px" alt="">
                                     <a href="" class="p2"> Empresa</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                <?php endif; ?>
+            </div>         
+        <?php endif; ?>
+        
+ <?php if ($pagina_atual === "treinamentos") : ?>
+    <?= $header ?>
+    <?php endif; ?>
+    <?php if ($pagina_atual === "treinamentos") : ?>
+            <?= $header ?>
+            <div class="header-wrapper">
+                <?= $header ?>
+                <?php if (!empty($breadcrumbs)) : ?>
+                    <section class=""> 
+                        <div class="container header-wrapper">
+                            <div class="row d-flex">
+                                <div class="d-flex titulo">
+                                    <h2>Empresa</h2>
+                                </div>
+                                <div class="d-flex links justify-content-end">
+                                    <a href="" class="p1">Home </a>
+                                    <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" class="mx-0-50" width="5px" alt="">
+                                    <a href="" class="p2"> Treinamento</a>
                                 </div>
                             </div>
                         </div>

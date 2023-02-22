@@ -3868,7 +3868,7 @@ textarea.form-control-lg {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #fff;
+  background-color: #F0F0F0;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
@@ -4310,6 +4310,9 @@ textarea.form-control-lg {
 }
 .offcanvas-top li a {
   color: white;
+}
+.offcanvas-top li .cor-solida a {
+  color: black;
 }
 .offcanvas-top li:hover {
   border-bottom: 2px solid #C44438;

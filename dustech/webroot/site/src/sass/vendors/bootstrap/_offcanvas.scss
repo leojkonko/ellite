@@ -186,6 +186,12 @@
     & a {
       color: white;
     }
+
+    & .cor-solida {
+      & a {
+        color: black;
+      }
+    }
   }
 
   & li:hover {

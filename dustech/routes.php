@@ -176,4 +176,19 @@ Router::get('/solucoes', function () {
         ],
     ]);
 });
+Router::get('/treinamento', function () {
+    app()->view->render('treinamento', [
+        'pagina_atual' => 'treinamentos',
+        'title' => "Treinamento",
+        'breadcrumbs' => [
+            [
+                'title' => 'Home',
+                'url' => url('/')
+            ],
+            [
+                'title' => 'Treinamento',
+            ],
+        ],
+    ]);
+});
 
