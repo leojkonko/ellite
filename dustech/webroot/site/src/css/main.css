@@ -1959,15 +1959,6 @@ html {
 }
 .cards {
   margin-top: 30px;
-  /*& .slide-img {
-          transition: margin-top 0.3s ease-in-out 0s;
-          margin-top: 0px;
-
-      }
-
-      & .slide-img:hover {
-          margin-top: -30px;
-      }*/
 }
 @media (min-width: 1600px) {
   .cards .container {
@@ -1979,21 +1970,30 @@ html {
   justify-content: center;
   margin: 20px 25px;
 }
-.cards .cards-conteudo a {
-  filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.2));
-  border: 10px solid white;
-  border-radius: 10px;
-}
 .cards img {
   display: block;
   object-fit: cover;
   border-radius: 5px;
   width: 220px;
   height: 335px;
+  border: 10px solid white;
+  border-radius: 10px !important;
+}
+@media (min-width: 1600px) {
+  .cards img {
+    max-width: 1660px;
+  }
+}
+.cards .cards-conteudo {
+  transition: margin-top 0.3s ease-in-out 0s;
+  margin-top: 0px;
+}
+.cards .cards-conteudo:hover {
+  margin-top: -30px;
 }
 .cards .span {
-  margin-top: -45px;
-  margin-left: -10px;
+  margin-top: -55px;
+  margin-left: 0px;
   position: absolute;
   color: black;
   width: 110px;
@@ -2012,7 +2012,7 @@ html {
 .cards .cor {
   position: absolute;
   color: white;
-  margin: 15px 0px 0px 15px;
+  margin: 25px 0px 0px 20px;
   font-size: 14px;
 }
 .cards .cor span {
@@ -2076,18 +2076,15 @@ html {
   .cards .container .row .cards-conteudo {
     width: 35%;
   }
-  .cards .container .row .cards-conteudo a {
-    border: 7px solid white !important;
-  }
   .cards .container .row .cards-conteudo img {
     display: block;
     object-fit: cover;
-    border-radius: 5px;
-    width: 140px;
+    border: 8px solid white !important;
+    width: 160px;
     height: 250px;
   }
   .cards .container .row .cards-conteudo .span {
-    margin-top: -30px;
+    margin-top: -40px;
     width: 80px !important;
     height: 40px;
   }
