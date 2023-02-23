@@ -34,6 +34,14 @@
         }
 
         & .swiper-pagination {}
+
+        & .swiper-pagination-bullet-active {
+            background: #c44438 !important;
+        }
+
+        & .swiper-pagination-bullet {
+            background: #3d2c2c;
+        }
     }
 
     & .conteudo {

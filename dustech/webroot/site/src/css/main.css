@@ -404,6 +404,12 @@
   object-fit: cover;
   border-radius: 10px;
 }
+#empresa .swiper .swiper-pagination-bullet-active {
+  background: #c44438 !important;
+}
+#empresa .swiper .swiper-pagination-bullet {
+  background: #3d2c2c;
+}
 #empresa .conteudo .titulo h2 {
   font-family: "Archivo";
   font-style: normal;
@@ -656,6 +662,12 @@
   height: 400px;
   object-fit: cover;
   border-radius: 10px;
+}
+.treinamento .swiper .swiper-pagination-bullet-active {
+  background: #ffffff !important;
+}
+.treinamento .swiper .swiper-pagination-bullet {
+  background: #e4e1e1;
 }
 .treinamento .titulo h2 {
   font-family: "Archivo";
