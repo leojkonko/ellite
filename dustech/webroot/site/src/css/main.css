@@ -606,12 +606,29 @@
   }
 }
 
-.treinamento {
+#treinamento {
   background: #F0F0F0;
+}
+
+.treinamento {
+  background-image: url(../../../../webroot/site/src/images/backgrounds/bg-red.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+@media (max-width: 1400px) {
+  .treinamento {
+    background-position: 40%;
+  }
+}
+@media (max-width: 767px) {
+  .treinamento {
+    background-position: 60% !important;
+  }
 }
 .treinamento .banner {
   margin: auto;
-  background: #F0F0F0;
+  background-color: transparent;
 }
 .treinamento .swiper {
   width: 100%;
@@ -625,7 +642,7 @@
 .treinamento .swiper .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #F0F0F0;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -643,7 +660,7 @@
   font-weight: 700;
   font-size: 50px;
   line-height: 100%;
-  color: #c44438;
+  color: #FFFFFF;
   text-align: center;
 }
 @media (max-width: 992px) {
@@ -665,6 +682,18 @@
 @media (max-width: 992px) {
   .treinamento .p p {
     font-size: 16px !important;
+  }
+}
+.treinamento .p img {
+  position: absolute;
+  width: 500px;
+  left: -30px;
+  top: 40%;
+}
+@media (max-width: 1400px) {
+  .treinamento .p img {
+    position: relative;
+    width: 80%;
   }
 }
 .treinamento form input,
