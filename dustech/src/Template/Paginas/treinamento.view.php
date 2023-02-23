@@ -33,7 +33,7 @@
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nostrum velit nemo ea, ut, porro, 
                                 ducimus cupiditate adipisci at nam assumenda vel! Accusamus earum deserunt, necessitatibus ullam enim 
                                 cum quas!</p>
-                                <img src="<?= asset('images/banners/pistola.png') ?>" width="80%" alt="">
+                                <img src="<?= asset('images/banners/pistola.png') ?>" class="bg" width="80%" alt="">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nostrum velit nemo ea, ut, porro, 
                                 ducimus cupiditate adipisci at nam assumenda vel! Accusamus earum deserunt, necessitatibus ullam enim 
                                 cum quas!</p>

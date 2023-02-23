@@ -11,5 +11,5 @@
             <?= app()->faker->paragraph(rand(1, 8)) ?>
         </p>
     </div>
-    <a href="<?php url('blog-detalhe') ?>" class="stretched-link" aria-label="Nome do produto"></a>
+    <a href="<?php //url('blog-detalhe') ?>/blog-detalhe" class="stretched-link" aria-label="Nome do produto"></a>
 </div>

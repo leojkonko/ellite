@@ -1,5 +1,5 @@
 <main id="post">
-<section class="treinamento py-lg-4 py-2">
+<section class="blog-detalhe py-lg-4 py-2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-8 col-12 d-flex justify-content-center banner">
