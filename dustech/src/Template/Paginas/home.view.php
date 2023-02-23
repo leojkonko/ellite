@@ -16,7 +16,7 @@
                         <h2>Produtos Destaques</h2>
                     </div>
                     <div>
-                        <button class="btn btn-custom"><a href="/produtos">Veja Todos</a></button>
+                        <button class="btn btn-custom"><a href="<?= url('produtos') ?>">Veja Todos</a></button>
                     </div>
                 </div>
                 <div class="col-lg-10 col-md-12 col-sm-12">
@@ -25,7 +25,7 @@
                             <?php foreach(range(0,9) as $i) : ?>
                                 <div class="swiper-slide h-100">
                                     <div class="slide-img">
-                                    <a href="/produtos">
+                                    <a href="<?= url('produtos') ?>">
                                         <div class="cor">
                                             <span>Cor Sólida</span>
                                         </div>
@@ -63,7 +63,7 @@
                         <img src="<?= asset('images/banners/in-company-sect3.svg') ?>" class="mt-5" alt="">
                     </div>
                 <div class="d-flex justify-content-start div-button">
-                    <button class="btn btn-custom">Saiba Mais</button>
+                    <button class="btn btn-custom"><a href="<?= url('treinamento') ?>">Saiba Mais</a></button>
                 </div>
             </div>
         </div>

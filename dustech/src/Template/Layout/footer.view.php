@@ -7,19 +7,19 @@
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 col-12 d-flex align-items-center justify-content-center">
                     <ul class="links-site p-0">
-                        <li><a href="">Empresa</a></li>
-                        <li><a href="">Cores sólidas</a></li>
-                        <li><a href="">Cores metálicas</a></li>
-                        <li><a href="">Treinamentos</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Contato</a></li>
+                        <li><a href="<?= url('empresa') ?>">Empresa</a></li>
+                        <li><a href="<?= url('produtos') ?>">Cores sólidas</a></li>
+                        <li><a href="<?= url('produtos') ?>">Cores metálicas</a></li>
+                        <li><a href="<?= url('treinamentos') ?>">Treinamentos</a></li>
+                        <li><a href="<?= url('blog') ?>">Blog</a></li>
+                        <li><a href="<?= url('contato') ?>">Contato</a></li>
                     </ul>
                 </div>
                 <div
                     class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-12 d-flex align-items-center justify-content-center">
                     <ul class="infos p-0">
                         <li>
-                            <a href="" target="_blank">
+                            <a href="https://www.google.com.br/maps/place/Dustech+-+Ind%C3%BAstria+e+Com%C3%A9rcio+de+Tintas+em+P%C3%B3/@-29.2193736,-51.5208998,17z/data=!3m1!4b1!4m6!3m5!1s0x951c3df1e6285cc1:0xf17d3d08347c6bc5!8m2!3d-29.2193783!4d-51.5187111!16s%2Fg%2F11jj4bgnsf" target="_blank">
                                 <img src="<?= asset('/images/icones/localizacao.svg') ?>" alt="">
                             BR 470, Km222 | Pavilhão 1 - Garibaldina, Garibaldi - RS, 95720-000
                             </a>

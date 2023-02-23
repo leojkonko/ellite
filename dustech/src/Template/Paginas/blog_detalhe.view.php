@@ -41,10 +41,10 @@
                                 </div>
                                 <div class="aplicabilidade p d-flex align-items-center pt-2">
                                     <p>Compartilhe:</p>
-                                    <div class="ms-2">
-                                    <img src="<?= asset('/images/icones/aplicabilidade.svg') ?>" class="ms-0-50 mb-1" width="40" alt="">
-                                    <img src="<?= asset('/images/icones/aplicabilidade.svg') ?>" class="ms-0-50 mb-1" width="40" alt="">
-                                    <img src="<?= asset('/images/icones/aplicabilidade.svg') ?>" class="ms-0-50 mb-1" width="40" alt="">
+                                    <div class="ms-2 mb-1">
+                                        <a class="ms-0-50 mb-1" href="">link</a>
+                                        <a class="ms-0-50 mb-1" href="">link</a>
+                                        <a class="ms-0-50 mb-1" href="">link</a>
                                     </div>
                                 </div>
                         </div>

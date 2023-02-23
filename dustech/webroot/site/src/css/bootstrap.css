@@ -4276,6 +4276,12 @@ textarea.form-control-lg {
   margin-right: 23px;
   font-size: 14px;
 }
+.offcanvas-end ul .buttons .button-cor .solida {
+  color: black;
+}
+.offcanvas-end ul .buttons .button-cor .metalica {
+  color: white;
+}
 .offcanvas-end .logo {
   margin-top: 40px;
 }

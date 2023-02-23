@@ -67,7 +67,7 @@
             </div>
             <div class="col-lg-7 col-xl-7 col-3 d-flex justify-content-center align-items-center menu-div">
                 <ul class="d-flex align-items-center menu d-lg-flex d-md-none d-sm-none d-xs-none ">
-                    <li><a href="/empresa">Empresa</a></li>
+                    <li><a href="<?= url('empresa') ?>">Empresa</a></li>
                     <li class="dropdown">
                         <button class="dropdown-button gap-0-50">Produtos
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flecha w-6 h-6">
@@ -75,13 +75,13 @@
                         </svg>
                         </button>
                         <ul class="dropdown-content">
-                            <li><a href="/produtos">Cores sólidas</a></li>
-                            <li><a href="/produtos">Cores metálicas</a></li>
+                            <li><a href="<?= url('produtos') ?>">Cores sólidas</a></li>
+                            <li><a href="<?= url('produtos') ?>">Cores metálicas</a></li>
                         </ul>
                     </li>
-                    <li><a href="/treinamento">Treinamento</a></li>
-                    <li><a href="/blog">Blog</a></li>
-                    <li><a href="/contato">Contato</a></li>    
+                    <li><a href="<?= url('treinamento') ?>">Treinamento</a></li>
+                    <li><a href="<?= url('blog') ?>">Blog</a></li>
+                    <li><a href="<?= url('contato') ?>">Contato</a></li>    
                 </ul>
                 <button class="btn me-1 d-lg-none d-md-flex d-sm-flex d-xs-flex p-0" type="button"
                     data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
@@ -115,16 +115,16 @@
     <div class="offcanvas-body">
         <div class="">
             <ul>
-                <li><a href="/">Empresa</a></li>
-                <li><a href="/">Produtos</a>
+                <li><a href="<?= url('empresa') ?>">Empresa</a></li>
+                <li><a href="<?= url('produtos') ?>">Produtos</a>
                     <div class="mt-1">
-                        <button class="btn btn-light text-dark cor-solida"><a href="/produtos" class="text-dark">Cor sólida</a></button>
-                        <button class="btn  btn-outline-light "><a href="/produtos">Cor metálica</a></button>
+                        <button class="btn btn-light text-dark cor-solida"><a href="<?= url('produtos') ?>" class="text-dark">Cor sólida</a></button>
+                        <button class="btn  btn-outline-light "><a href="<?= url('produtos') ?>">Cor metálica</a></button>
                     </div>
                 </li>
-                <li><a href="/">Treinamento</a></li>
-                <li><a href="/">Blog</a></li>
-                <li><a href="/">Contato</a></li>
+                <li><a href="<?= url('treinamento') ?>">Treinamento</a></li>
+                <li><a href="<?= url('blog') ?>">Blog</a></li>
+                <li><a href="<?= url('contato') ?>">Contato</a></li>
             </ul>
         </div>
     </div>
@@ -148,8 +148,8 @@
                         <input type="text" class="form-control text-light" placeholder="Digite o código">
                     </div>
                     <div class="col-lg-12 mt-1 buttons">
-                        <button class="btn btn-light text-dark button-cor">Cor sólida</button>
-                        <button class="btn  btn-outline-light button-cor">Cor metálica</button>
+                        <button class="btn btn-light text-dark button-cor"><a href="<?= url('produtos') ?>" class="solida">Cor sólida</a></button>
+                        <button class="btn  btn-outline-light button-cor"><a href="<?= url('produtos') ?>" class="metalica">Cor metálica</a></button>
                         <button class="btn btn-custom"><img
                                 src="<?= asset('/images/icones/lupa-pequena.svg') ?>" width="16px"
                                 alt=""></button>

@@ -24,9 +24,15 @@
         background-color: transparent;
     }
 
+    // AJUSTE
     & .swiper {
         width: 100%;
-        height: 100%;
+
+        .swiper-wrapper {
+            position: absolute;
+        }
+
+        // FIM AJUSTE
 
         @media (max-width: 567px) {
             margin-top: -160px;
@@ -139,13 +145,13 @@
             justify-content: center;
             align-items: center;
 
-            & .bg {
+            /*& .bg {
                 display: block;
                 width: 100%;
                 height: 400px;
                 object-fit: cover;
                 border-radius: 10px;
-            }
+            }*/
         }
 
         & .swiper-pagination {}
