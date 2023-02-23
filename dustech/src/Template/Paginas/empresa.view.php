@@ -46,8 +46,8 @@
 
         <div class="container py-lg-4">
             <div class="row valores-empresa">
-                <div class="col-lg-4 d-flex justify-content-center conteudo">
-                    <div class="row">
+                <div class="col-lg-4 col-12 d-flex justify-content-center conteudo">
+                    <div class="row estilo">
                         <div class="d-flex justify-content-center">
                            <img src="<?= asset('images/icones/icon1.svg') ?>" width="25%" alt="">
                         </div>
@@ -60,9 +60,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex justify-content-center conteudo">
-                    <div class="row">
-                    <div class="d-flex justify-content-center">
+                <div class="col-lg-4 col-12 d-flex justify-content-center conteudo">
+                    <div class="row estilo">
+                        <div class="d-flex justify-content-center">
                            <img src="<?= asset('images/icones/icon1.svg') ?>" width="25%" alt="">
                         </div>
                         <div class="d-flex justify-content-center titulo">
@@ -74,8 +74,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex justify-content-center conteudo">
-                    <div class="row">
+                <div class="col-lg-4 col-12 d-flex justify-content-center conteudo">
+                    <div class="row estilo">
                     <div class="d-flex justify-content-center">
                            <img src="<?= asset('images/icones/icon1.svg') ?>" width="25%" alt="">
                         </div>

@@ -47,12 +47,13 @@
             & p {
                 font-family: "Archivo";
                 font-style: normal;
-                font-weight: 300;
-                font-size: 16px;
+                font-weight: 400;
+                font-size: 18px;
                 line-height: 100%;
 
-                @media (max-width: 992px) {
+                @media (max-width: 767px) {
                     text-align: center;
+                    font-size: 16px;
                 }
             }
         }
@@ -61,12 +62,22 @@
     // valores -empresa
 
     & .valores-empresa {
-        & .row {
-            background: rgba(172, 169, 169, 0.2);
-            margin: 0px 10px;
-            border-radius: 10px;
-            padding: 30px 20px;
-            transition: margin-top 0.2s ease-in-out 0s;
+        @media (max-width: 992px) {
+            margin-top: -100px;
+        }
+
+        & .conteudo {
+            & .estilo {
+                background: rgba(172, 169, 169, 0.2);
+                margin: 0px 10px;
+                border-radius: 10px;
+                padding: 30px 20px;
+                transition: margin-top 0.2s ease-in-out 0s;
+            }
+
+            @media (max-width: 992px) {
+                margin: 20px 0px;
+            }
 
             & .titulo {
                 & h2 {
@@ -95,7 +106,7 @@
             }
         }
 
-        & .row:hover {
+        & .estilo:hover {
             background: rgba(99, 97, 97, 0.2);
             margin-top: -20px;
 

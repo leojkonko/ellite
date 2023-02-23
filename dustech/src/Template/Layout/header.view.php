@@ -323,4 +323,30 @@
             </div>         
         <?php endif; ?>
 
+ <?php if ($pagina_atual === "blog_detalhe") : ?>
+    <?= $header ?>
+    <?php endif; ?>
+    <?php if ($pagina_atual === "blog_detalhe") : ?>
+            <?= $header ?>
+            <div class="header-wrapper">
+                <?= $header ?>
+                <?php if (!empty($breadcrumbs)) : ?>
+                    <section class=""> 
+                        <div class="container header-wrapper">
+                            <div class="row d-flex">
+                                <div class="d-flex titulo">
+                                    <h2>Blog-Detalhe</h2>
+                                </div>
+                                <div class="d-flex links justify-content-end">
+                                    <a href="" class="p1">Home </a>
+                                    <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" class="mx-0-50" width="5px" alt="">
+                                    <a href="" class="p2"> Blog-detalhe</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                <?php endif; ?>
+            </div>         
+        <?php endif; ?>
+
 

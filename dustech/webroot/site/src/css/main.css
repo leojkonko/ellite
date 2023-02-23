@@ -415,23 +415,34 @@
 #empresa .conteudo .p p {
   font-family: "Archivo";
   font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 100%;
 }
-@media (max-width: 992px) {
+@media (max-width: 767px) {
   #empresa .conteudo .p p {
     text-align: center;
+    font-size: 16px;
   }
 }
-#empresa .valores-empresa .row {
+@media (max-width: 992px) {
+  #empresa .valores-empresa {
+    margin-top: -100px;
+  }
+}
+#empresa .valores-empresa .conteudo .estilo {
   background: rgba(172, 169, 169, 0.2);
   margin: 0px 10px;
   border-radius: 10px;
   padding: 30px 20px;
   transition: margin-top 0.2s ease-in-out 0s;
 }
-#empresa .valores-empresa .row .titulo h2 {
+@media (max-width: 992px) {
+  #empresa .valores-empresa .conteudo {
+    margin: 20px 0px;
+  }
+}
+#empresa .valores-empresa .conteudo .titulo h2 {
   font-family: "Archivo";
   font-style: normal;
   font-weight: 500;
@@ -440,7 +451,7 @@
   color: black !important;
   text-align: center;
 }
-#empresa .valores-empresa .row .p p {
+#empresa .valores-empresa .conteudo .p p {
   font-family: "Archivo";
   font-style: normal;
   font-weight: 300;
@@ -448,15 +459,15 @@
   line-height: 100%;
 }
 @media (max-width: 992px) {
-  #empresa .valores-empresa .row .p p {
+  #empresa .valores-empresa .conteudo .p p {
     text-align: center;
   }
 }
-#empresa .valores-empresa .row:hover {
+#empresa .valores-empresa .estilo:hover {
   background: rgba(99, 97, 97, 0.2);
   margin-top: -20px;
 }
-#empresa .valores-empresa .row:hover h2 {
+#empresa .valores-empresa .estilo:hover h2 {
   color: #c44438;
 }
 
@@ -1192,7 +1203,7 @@ html {
   font-size: 48px;
 }
 
-@media (max-width: 449.99px) {
+@media (max-width: 767px) {
   .catalogo {
     position: relative;
     background-image: none !important;
@@ -1249,75 +1260,93 @@ html {
     content: "Versão digital";
   }
 }
+/*
 @media (min-width: 450px) and (max-width: 575.98px) {
-  .div-catalogo {
-    margin-top: 160px !important;
-    margin-bottom: 30px;
-  }
-  .div-catalogo h2 {
-    font-size: 32px !important;
-  }
-  .div-catalogo img {
-    width: 55%;
-    margin-left: 60px;
-    margin-top: -70px;
-  }
-  .div-catalogo button {
-    margin-left: 20px;
-    margin-bottom: 70px;
-  }
-  .catalogo {
-    background-image: url(../../../../webroot/site/src/images/backgrounds/banner-catalogo.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-  }
-  .catalogo .div-catalogo div h2 span {
-    display: none;
-  }
-  .catalogo .div-catalogo div .button1::before {
-    content: "Versão física";
-  }
-  .catalogo .div-catalogo div .button2::before {
-    content: "Versão digital";
-  }
+    .div-catalogo {
+        margin-top: 160px !important;
+        //padding-left: 50px;
+        margin-bottom: 30px;
+
+        & h2 {
+            font-size: 32px !important;
+        }
+
+        & img {
+            width: 55%;
+            margin-left: 60px;
+            margin-top: -70px;
+        }
+
+        & button {
+            margin-left: 20px;
+            margin-bottom: 70px;
+        }
+    }
+
+    .catalogo {
+        background-image: url(../../../../webroot/site/src/images/backgrounds/banner-catalogo.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+    }
+
+    .catalogo .div-catalogo div h2 span {
+        display: none;
+    }
+
+    .catalogo .div-catalogo div .button1::before {
+        content: "Versão física";
+    }
+
+    .catalogo .div-catalogo div .button2::before {
+        content: "Versão digital";
+    }
 }
+
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .div-catalogo {
-    margin-top: 120px !important;
-    padding-left: 50px;
-    margin-bottom: 60px;
-  }
-  .div-catalogo h2 {
-    font-size: 38px !important;
-  }
-  .div-catalogo img {
-    width: 55%;
-    margin-left: 100px;
-    margin-top: -60px;
-  }
-  .div-catalogo button {
-    margin-left: 10px;
-  }
-  .catalogo {
-    background-image: url(../../../../webroot/site/src/images/backgrounds/banner-catalogo.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-  }
-  .catalogo .div-catalogo div h2 {
-    font-size: 25px;
-  }
-  .catalogo .div-catalogo div h2 span {
-    display: none;
-  }
-  .catalogo .div-catalogo div .button1::before {
-    content: "Solicite a versão física";
-  }
-  .catalogo .div-catalogo div .button2::before {
-    content: "Baixe a versão digital";
-  }
-}
+    .div-catalogo {
+        margin-top: 120px !important;
+        padding-left: 50px;
+        margin-bottom: 60px;
+
+        & h2 {
+            font-size: 38px !important;
+        }
+
+        & img {
+            width: 55%;
+            margin-left: 100px;
+            margin-top: -60px;
+        }
+
+        & button {
+            margin-left: 10px;
+        }
+    }
+
+    .catalogo {
+        background-image: url(../../../../webroot/site/src/images/backgrounds/banner-catalogo.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+    }
+
+    .catalogo .div-catalogo div h2 {
+        font-size: 25px;
+    }
+
+    .catalogo .div-catalogo div h2 span {
+        display: none;
+    }
+
+    .catalogo .div-catalogo div .button1::before {
+        content: "Solicite a versão física";
+    }
+
+    .catalogo .div-catalogo div .button2::before {
+        content: "Baixe a versão digital";
+    }
+}*/
 @media (min-width: 768px) and (max-width: 991.98px) {
   .div-catalogo {
     margin-top: 120px !important;
