@@ -54,9 +54,9 @@
                 <div class="col-lg-4 col-12 d-flex justify-content-center conteudo">
                     <div class="row estilo">
                         <div class="d-flex justify-content-center">
-                            <img src="<?= asset('images/icones/icon1.svg') ?>" width="25%" alt="">
+                            <img src="<?= asset('images/icones/missao.png') ?>" width="15%" alt="">
                         </div>
-                        <div class="d-flex justify-content-center titulo">
+                        <div class="d-flex justify-content-center titulo pt-1">
                             <h2>Missão</h2>
                         </div>
                         <div class="p">
@@ -68,9 +68,9 @@
                 <div class="col-lg-4 col-12 d-flex justify-content-center conteudo">
                     <div class="row estilo">
                         <div class="d-flex justify-content-center">
-                            <img src="<?= asset('images/icones/icon1.svg') ?>" width="25%" alt="">
+                            <img src="<?= asset('images/icones/visao.png') ?>" width="15%" alt="">
                         </div>
-                        <div class="d-flex justify-content-center titulo">
+                        <div class="d-flex justify-content-center titulo pt-1">
                             <h2>Visão</h2>
                         </div>
                         <div class="p">
@@ -82,9 +82,9 @@
                 <div class="col-lg-4 col-12 d-flex justify-content-center conteudo">
                     <div class="row estilo">
                         <div class="d-flex justify-content-center">
-                            <img src="<?= asset('images/icones/icon1.svg') ?>" width="25%" alt="">
+                            <img src="<?= asset('images/icones/valores.png') ?>" width="15%" alt="">
                         </div>
-                        <div class="d-flex justify-content-center titulo">
+                        <div class="d-flex justify-content-center titulo pt-1">
                             <h2>Valores</h2>
                         </div>
                         <div class="p">
