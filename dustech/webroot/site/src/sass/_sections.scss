@@ -141,6 +141,26 @@ html {
             }
         }
     }
+
+
+}
+
+.pagination {
+    .page-item {
+        & .page-link {
+            color: #202020 !important;
+        }
+    }
+
+    & .active {
+        background-color: #c44438 !important;
+
+
+        & .page-link {
+            background-color: #c44438 !important;
+            border-color: #c44438 !important;
+        }
+    }
 }
 
 @media (max-width: 575.98px) {

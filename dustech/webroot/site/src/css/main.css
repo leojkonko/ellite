@@ -929,6 +929,17 @@ html {
   font-size: 12px;
 }
 
+.pagination .page-item .page-link {
+  color: #202020 !important;
+}
+.pagination .active {
+  background-color: #c44438 !important;
+}
+.pagination .active .page-link {
+  background-color: #c44438 !important;
+  border-color: #c44438 !important;
+}
+
 @media (max-width: 575.98px) {
   .produtos-destaques .cor {
     margin: 15px 0px 0px 0px !important;
