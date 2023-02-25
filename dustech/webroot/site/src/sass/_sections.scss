@@ -179,15 +179,17 @@ html {
         }
     }
 
-    .swiper-wrapper .swiper-slide {
-        margin-top: 180px;
-    }
 
-    .swiper-wrapper .swiper-slide .slide-img {
-        width: 100%;
-    }
 
     .produtos-destaques {
+        & .swiper-wrapper .swiper-slide {
+            margin-top: 180px;
+        }
+
+        & .swiper-wrapper .swiper-slide .slide-img {
+            width: 100%;
+        }
+
         & .swiper-wrapper .swiper-slide .slide-img img {
             width: 90%;
             border: 5px solid white;
@@ -695,7 +697,7 @@ html {
         }
 
         & div {
-            margin-top: -30px;
+            //  margin-top: -30px;
 
             & h2 {
                 font-family: "Archivo", sans-serif;
@@ -888,6 +890,7 @@ html {
         background-image: url(../../../../webroot/site/src/images/backgrounds/banner-catalogo.svg);
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: 60%;
         color: white;
     }
 
@@ -918,6 +921,7 @@ html {
         background-image: url(../../../../webroot/site/src/images/backgrounds/banner-catalogo.svg);
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: 60%;
         color: white;
     }
 
@@ -955,6 +959,7 @@ html {
     .catalogo {
         background-image: url(../../../../webroot/site/src/images/backgrounds/banner-catalogo.svg);
         background-size: cover;
+        background-position: 60%;
         background-repeat: no-repeat;
         //height: 275px;
         height: 100%;
@@ -999,6 +1004,7 @@ html {
     .catalogo {
         background-image: url(../../../../webroot/site/src/images/backgrounds/banner-catalogo.svg);
         background-size: cover;
+        background-position: 60%;
         background-repeat: no-repeat;
         color: white;
     }
@@ -2022,6 +2028,16 @@ html {
 
 .header-wrapper {
     background: #f0f0f0;
+    padding-top: 180px;
+
+    @media (max-width: 576px) {
+        padding-top: 180px;
+        //margin-bottom: 20px;
+    }
+
+    @media (max-width: 450px) {
+        padding-top: 140px;
+    }
 
     & .titulo {
         & h2 {
@@ -2031,11 +2047,9 @@ html {
             font-weight: 700;
             font-size: 40px;
             line-height: 100%;
-            padding-top: 150px;
-            padding-bottom: 30px;
 
             @media (max-width: 576px) {
-                padding-top: 140px;
+                font-size: 28px;
             }
 
 
@@ -2043,21 +2057,21 @@ html {
         }
     }
 
-    & .titulo-detalhes {
-        margin-top: 240px;
-
-        @media (max-width: 576px) {
-            margin-top: 160px !important;
-
-        }
-    }
 
     & .links {
         color: #8f8f8f;
-        margin-top: -40px;
+        padding-top: 14px;
 
         & img {
-            margin-top: -15px;
+            margin-top: 5px;
+
+            @media (max-width: 1200px) {
+                //margin-top: 0px;
+            }
+
+            @media (max-width: 576px) {
+                //margin-top: 5px;
+            }
         }
 
         & .p1 {
@@ -2076,16 +2090,17 @@ html {
     .header-wrapper {
         & .links {
             color: #8f8f8f;
-            margin-top: 0px;
-            justify-content: center !important;
+            //margin-top: 0px;
+            //justify-content: center !important;
+            font-size: 16px;
 
             & img {
-                margin-top: 0px !important;
+                //margin-top: 0px !important;
             }
         }
 
         & .titulo {
-            justify-content: center;
+            // justify-content: center;
         }
     }
 }
@@ -2109,7 +2124,7 @@ html {
         }
 
         @media (max-width: 576px) {
-            margin-top: -130px !important;
+            //margin-top: -130px !important;
         }
     }
 
@@ -2139,6 +2154,10 @@ html {
             display: flex;
             justify-content: center;
             padding-top: 50px;
+        }
+
+        @media (max-width: 576px) {
+            margin-top: -60px !important;
         }
 
         & h2 {
@@ -2338,7 +2357,7 @@ html {
             }
 
             @media (max-width:576px) {
-                margin-top: -150px !important;
+                //margin-top: -150px !important;
             }
 
             padding-bottom: 80px;

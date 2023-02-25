@@ -27,10 +27,7 @@
 
                 <div class="col-lg-6 conteudo d-flex align-items-center py-4 py-sm-4 py-md-4 py-lg-0 py-xl-0 py-xxl-0">
                     <div class="row">
-                        <div class="col-12 titulo">
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                        </div>
-                        <div class="col-12 p px-xl-4 px-lg-2 py-4">
+                        <div class="col-12 p px-xl-4 px-lg-2 ">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nostrum velit nemo ea, ut, porro,
                                 ducimus cupiditate adipisci at nam assumenda vel! Accusamus earum deserunt, necessitatibus ullam enim
                                 cum quas!</p>
@@ -49,7 +46,7 @@
             </div>
         </div>
 
-        <div class="container py-lg-4">
+        <div class="container pb-lg-4">
             <div class="row valores-empresa">
                 <div class="col-lg-4 col-12 d-flex justify-content-center conteudo">
                     <div class="row estilo">
@@ -82,7 +79,7 @@
                 <div class="col-lg-4 col-12 d-flex justify-content-center conteudo">
                     <div class="row estilo">
                         <div class="d-flex justify-content-center">
-                            <img src="<?= asset('images/icones/valores.png') ?>" width="15%" alt="">
+                            <img src="<?= asset('images/icones/valor.png') ?>" width="15%" alt="">
                         </div>
                         <div class="d-flex justify-content-center titulo pt-1">
                             <h2>Valores</h2>

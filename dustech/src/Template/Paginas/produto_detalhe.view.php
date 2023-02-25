@@ -2,7 +2,7 @@
     <section class="produto-detalhe py-lg-4 py-2">
         <div class="container">
             <div class="row ">
-                <div class="col-lg-6 col-xxl-4 col-md-10 col-sm-12 d-flex justify-content-center">
+                <div class="col-lg-6 ps-1 col-xxl-4 col-md-10 col-sm-12 d-flex justify-content-center">
                 <div class="swiper produtos-detalhe-swiper">
                         <div class="swiper-wrapper">
                             <?php foreach(range(0,9) as $i) : ?>
@@ -42,7 +42,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-12 py-sm-4  py-md-4 py-lg-4 py-xl-4 py-xxl-0 col-xxl-3 col-md-12 form-contato ps-2">
+                <div class="col-lg-12 py-sm-4  py-md-4 py-lg-4 py-xl-4 py-xxl-0 col-xxl-3 col-md-12 form-contato ps-1">
                     <div class="d-flex">
                         <h2>Formulário para contato</h2>
                     </div>

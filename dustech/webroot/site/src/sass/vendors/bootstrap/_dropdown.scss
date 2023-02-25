@@ -25,7 +25,7 @@
   background-color: black;
   width: 170px;
   background-image: url(../../../../../../webroot/site/src/images/backgrounds/img_second.svg);
-  background: rgba(32, 32, 32, 0.5);
+  background: rgba(32, 32, 32, 1);
   backdrop-filter: blur(12.5px);
   border-top: 4px solid #C44438;
   margin-top: 100px;
@@ -56,7 +56,7 @@
 
 @media (min-width:992px)and(max-width:1200px) {
   .dropdown-content {
-    margin-top: 85px !important;
+    margin-top: 90px !important;
   }
 }
 
@@ -68,7 +68,7 @@
 
 @media (min-width: 1600px)and(max-width: 1981px) {
   .dropdown-content {
-    margin-top: 95px !important;
+    margin-top: 98px !important;
   }
 }
 

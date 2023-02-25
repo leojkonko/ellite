@@ -80,13 +80,40 @@
                                 </h2>
                             </div>
                             <div class="col-md-12 d-flex justify-content-center justify-content-lg-start">
-                                <button class="btn btn-black button1"></button>
+                                <button class="btn btn-black button1"  data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
                                 <button class="btn btn-black button2">
                                     <svg width="20px" class="ms-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
                                     </svg>
-
                                 </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-dark" id="exampleModalLabel">Fale Conosco!</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                                        </div>
+                                        <div class="modal-body py-2">
+                                            <form action="">
+                                                <input type="text" placeholder="Nome *" class="w-100 mt-1">
+                                                <input type="email" placeholder="Email *" class="w-100 mt-1">
+                                                <input type="number" placeholder="Número *" class="w-100 mt-1">
+                                                <input type="text" placeholder="Endereço *" class="w-100 mt-1">
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+            
+                                            <button type="button" class="btn btn-custom">
+                                                Enviar
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <!-- Modal -->
+                                
                             </div>
                         </div>
                     </div>

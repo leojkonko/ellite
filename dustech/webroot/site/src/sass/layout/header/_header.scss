@@ -23,9 +23,14 @@
     }
 
     & .menu {
-        padding-top: 10px;
-        padding-bottom: -20px;
+        //padding-top: 10px;
+        //padding-bottom: -20px;
         height: 115%;
+
+        //border: 1px solid blue;
+        @media (min-width:1600px)and(max-width: 1980px) {
+            //height: 100% !important;
+        }
 
         & li {
             display: flex;
@@ -33,6 +38,7 @@
             transition: border-bottom 0.3s ease;
             list-style: none;
             height: 100%;
+            //border: 1px solid red;
 
 
             & .flecha {
@@ -51,6 +57,7 @@
                 padding: 0px 30px;
                 padding-top: 50px;
                 height: 100%;
+                //border: 1px solid gold;
             }
 
             & a:hover {
@@ -60,7 +67,7 @@
         }
 
         & li:hover {
-            border-bottom: 4px solid #C44438;
+            border-bottom: 3px solid #C44438;
         }
     }
 
@@ -173,13 +180,32 @@ $breakpoint-xl: 1200px;
     }
 }
 
-
-@media (min-width: 1600px) {
+@media (min-width: 992px)and(max-width: 1200px) {
     .menu {
         margin-top: 20px;
 
         & li {
             height: 85% !important;
+        }
+    }
+}
+
+@media (min-width: 1200px)and(max-width: 1600px) {
+    .menu {
+        margin-top: 20px;
+
+        & li {
+            height: 85% !important;
+        }
+    }
+}
+
+@media (min-width: 1600px)and(max-width: 1981px) {
+    .menu {
+        margin-top: 25px;
+
+        & li {
+            height: 80% !important;
         }
     }
 

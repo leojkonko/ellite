@@ -168,24 +168,27 @@
     $header = ob_get_contents();
     ob_end_clean();
     ?>
-<?php if ($pagina_atual === "home") : ?>
+    <?php if ($pagina_atual === "home") : ?>
+    <?= $header ?>
+    <?php endif; ?>
+<?php if ($pagina_atual === "produtos") : ?>
     <?= $header ?>
     <?php endif; ?>
     <?php if ($pagina_atual === "produtos") : ?>
-            <?= $header ?>
             <div class="header-wrapper">
-                <?= $header ?>
                 <?php if (!empty($breadcrumbs)) : ?>
                     <section class=""> 
-                        <div class="container header-wrapper">
-                            <div class="row d-flex">
-                                <div class="d-flex titulo">
-                                    <h2>Cores sólidas</h2>
-                                </div>
-                                <div class="d-flex links justify-content-end">
-                                    <a href="" class="p1">Home </a>
-                                    <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" class="mx-0-50" width="5px" alt="">
-                                    <a href="" class="p2"> Produtos</a>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 d-flex">
+                                    <div class="col-6 d-flex justify-content-start titulo">                              
+                                        <h2>Produtos</h2>
+                                    </div>
+                                    <div class="col-6 d-flex justify-content-end links">
+                                        <a href="" class="p1">Home</a>
+                                        <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" class="mx-0-50 mb-1 d-flex" width="5px" alt="">
+                                         <a href="" class="p2">Produtos</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -200,14 +203,19 @@
             <div class="header-wrapper">
                 <?php //if (!empty($breadcrumbs)) : ?>
                     <section class=""> 
-                        <div class="container header-wrapper">
-                            <div class="row d-flex titulo-detalhes">
-                                <div class="d-flex links justify-content-end ">
-                                    <a href="" class="p1">Home </a>
-                                    <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" class="mx-0-50" width="5px" alt="">
-                                    <a href="" class="p2"> Produtos</a>
-                                    <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" class="mx-0-50" width="5px" alt="">
-                                    <a href="" class="p2"> C1101</a>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 d-flex">
+                                    <div class="col-6 d-flex justify-content-start titulo">                              
+                                        <h2></h2>
+                                    </div>
+                                    <div class="col-6 d-flex justify-content-end links">
+                                        <a href="" class="p1">Home</a>
+                                        <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" class="mx-0-50 mb-0-50 d-flex" width="5px" alt="">
+                                         <a href="" class="p2">Produtos</a>
+                                        <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" class="mx-0-50 mb-0-50 d-flex" width="5px" alt="">
+                                         <a href="" class="p2">C1011</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -220,20 +228,20 @@
     <?= $header ?>
     <?php endif; ?>
     <?php if ($pagina_atual === "contato") : ?>
-            <?= $header ?>
             <div class="header-wrapper">
-                <?= $header ?>
                 <?php if (!empty($breadcrumbs)) : ?>
                     <section class=""> 
-                        <div class="container header-wrapper">
-                            <div class="row d-flex">
-                                <div class="d-flex titulo">
-                                    <h2>Contato</h2>
-                                </div>
-                                <div class="d-flex links justify-content-end">
-                                    <a href="" class="p1">Home </a>
-                                    <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" class="mx-0-50" width="5px" alt="">
-                                    <a href="" class="p2"> Contato</a>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 d-flex">
+                                    <div class="col-6 d-flex justify-content-start titulo">                              
+                                        <h2>Contato</h2>
+                                    </div>
+                                    <div class="col-6 d-flex justify-content-end links">
+                                        <a href="" class="p1">Home</a>
+                                        <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" class="mx-0-50 mb-1 d-flex" width="5px" alt="">
+                                         <a href="" class="p2">Contato</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -247,20 +255,20 @@
     <?= $header ?>
     <?php endif; ?>
     <?php if ($pagina_atual === "blog") : ?>
-            <?= $header ?>
             <div class="header-wrapper">
-                <?= $header ?>
                 <?php if (!empty($breadcrumbs)) : ?>
                     <section class=""> 
-                        <div class="container header-wrapper">
-                            <div class="row d-flex">
-                                <div class="d-flex titulo">
-                                    <h2>Blog</h2>
-                                </div>
-                                <div class="d-flex links justify-content-end">
-                                    <a href="" class="p1">Home </a>
-                                    <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" class="mx-0-50" width="5px" alt="">
-                                    <a href="" class="p2"> Blog</a>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 d-flex">
+                                    <div class="col-6 d-flex justify-content-start titulo">                              
+                                        <h2>Blog</h2>
+                                    </div>
+                                    <div class="col-6 d-flex justify-content-end links">
+                                        <a href="" class="p1">Home</a>
+                                        <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" class="mx-0-50 mb-1 d-flex" width="5px" alt="">
+                                         <a href="" class="p2">Blog</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -275,20 +283,20 @@
     <?= $header ?>
     <?php endif; ?>
     <?php if ($pagina_atual === "empresa") : ?>
-            <?= $header ?>
             <div class="header-wrapper">
-                <?= $header ?>
                 <?php if (!empty($breadcrumbs)) : ?>
                     <section class=""> 
-                        <div class="container header-wrapper">
-                            <div class="row d-flex">
-                                <div class="d-flex titulo">
-                                    <h2>Empresa</h2>
-                                </div>
-                                <div class="d-flex links justify-content-end">
-                                    <a href="" class="p1">Home </a>
-                                    <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" class="mx-0-50" width="5px" alt="">
-                                    <a href="" class="p2"> Empresa</a>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 d-flex">
+                                    <div class="col-6 d-flex justify-content-start titulo">                              
+                                        <h2>Empresa</h2>
+                                    </div>
+                                    <div class="col-6 d-flex justify-content-end links">
+                                        <a href="" class="p1">Home</a>
+                                        <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" class="mx-0-50 mb-1 d-flex" width="5px" alt="">
+                                         <a href="" class="p2">Empresa</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -301,20 +309,20 @@
     <?= $header ?>
     <?php endif; ?>
     <?php if ($pagina_atual === "treinamentos") : ?>
-            <?= $header ?>
-            <div class="header-wrapper">
-                <?= $header ?>
+            <div class="header-wrapper pb-3">
                 <?php if (!empty($breadcrumbs)) : ?>
                     <section class=""> 
-                        <div class="container header-wrapper">
-                            <div class="row d-flex">
-                                <div class="d-flex titulo">
-                                    <h2>Empresa</h2>
-                                </div>
-                                <div class="d-flex links justify-content-end">
-                                    <a href="" class="p1">Home </a>
-                                    <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" class="mx-0-50" width="5px" alt="">
-                                    <a href="" class="p2"> Treinamento</a>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 d-flex">
+                                    <div class="col-6 d-flex justify-content-start titulo">                              
+                                        <h2>Treinamento</h2>
+                                    </div>
+                                    <div class="col-6 d-flex justify-content-end links">
+                                        <a href="" class="p1">Home</a>
+                                        <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" class="mx-0-50 mb-1 d-flex" width="5px" alt="">
+                                         <a href="" class="p2">Treinamento</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -327,20 +335,20 @@
     <?= $header ?>
     <?php endif; ?>
     <?php if ($pagina_atual === "blog_detalhe") : ?>
-            <?= $header ?>
             <div class="header-wrapper">
-                <?= $header ?>
                 <?php if (!empty($breadcrumbs)) : ?>
                     <section class=""> 
-                        <div class="container header-wrapper">
-                            <div class="row d-flex">
-                                <div class="d-flex titulo">
-                                    <h2>Blog-Detalhe</h2>
-                                </div>
-                                <div class="d-flex links justify-content-end">
-                                    <a href="" class="p1">Home </a>
-                                    <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" class="mx-0-50" width="5px" alt="">
-                                    <a href="" class="p2"> Blog-detalhe</a>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 d-flex">
+                                    <div class="col-6 d-flex justify-content-start titulo">                              
+                                        <h2>Blog Detalhe</h2>
+                                    </div>
+                                    <div class="col-6 d-flex justify-content-end links">
+                                        <a href="" class="p1">Home</a>
+                                        <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" class="mx-0-50  d-flex" width="5px" alt="">
+                                         <a href="" class="p2">Blog Detalhe</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
