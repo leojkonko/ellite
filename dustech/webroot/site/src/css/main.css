@@ -257,6 +257,9 @@
   header {
     position: absolute !important;
   }
+  .header-wrapper .links {
+    margin-top: -7px;
+  }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .menu {
@@ -477,7 +480,7 @@
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
-  line-height: 100%;
+  line-height: 140%;
 }
 @media (max-width: 992px) {
   #empresa .valores-empresa .conteudo .p p {
@@ -772,7 +775,7 @@
   padding: 15px 22px 15px 16px;
 }
 .treinamento form textarea {
-  height: 100%;
+  height: 150px;
 }
 
 .blog-detalhe {
@@ -839,7 +842,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 100%;
+  line-height: 160%;
   text-align: center;
 }
 @media (max-width: 992px) {
@@ -855,7 +858,7 @@
   padding: 15px 22px 15px 16px;
 }
 .blog-detalhe form textarea {
-  height: 100%;
+  height: 150px;
 }
 
 /*
@@ -1381,11 +1384,8 @@ html {
     width: 32% !important;
   }
 }
-.catalogo .div-catalogo button {
+.catalogo .div-catalogo .button1 {
   margin-right: 20px;
-}
-.catalogo .div-catalogo button i {
-  margin-left: 10px;
 }
 .catalogo .div-catalogo div h2 {
   font-family: "Archivo", sans-serif;
@@ -1430,7 +1430,8 @@ html {
     width: 55%;
     margin-top: -40px;
   }
-  .div-catalogo button {
+  .div-catalogo .button1,
+.div-catalogo .button2 {
     margin-left: 30px;
     font-size: 14px;
     margin-bottom: 50px;
@@ -1604,7 +1605,6 @@ html {
     height: 100%;
     margin-top: 100px;
     margin-bottom: 50px;
-    font-size: 3px !important;
   }
   .catalogo .div-catalogo div h2 {
     font-size: 42px;
@@ -2084,7 +2084,8 @@ html {
   padding-left: 70px;
   padding-bottom: 50px;
 }
-.catalogo-produtos .container .div-buttons button {
+.catalogo-produtos .container .div-buttons .button1,
+.catalogo-produtos .container .div-buttons .button2 {
   margin-left: 30px;
   margin-top: -40px;
   padding: 12px 28px;
@@ -2096,15 +2097,51 @@ html {
   content: "Baixe a versão digital";
 }
 
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .catalogo-produtos .container {
+    background-position: 80%;
+  }
+}
 @media (min-width: 992px) and (max-width: 1200px) {
+  .catalogo-produtos .container {
+    background-position: 80%;
+  }
   .catalogo-produtos .div-titulo h2 {
     padding-top: 50px;
   }
-  .catalogo-produtos .div-buttons button {
+  .catalogo-produtos .div-buttons .button1,
+.catalogo-produtos .div-buttons .button2 {
     margin-top: -20px !important;
   }
 }
 @media (min-width: 767px) and (max-width: 992px) {
+  .catalogo-produtos {
+    /*.container {
+        position: relative;
+        //background-image: none !important;
+        overflow: hidden;
+    }
+
+    .container::before {
+        content: "";
+        top: -2px;
+        left: -2px;
+        position: absolute;
+        width: 102%;
+        height: 102%;
+        //background: url(../../../../webroot/site/src/images/backgrounds/banner-catalogo.svg), rgba($black, 0.5);
+        background: url(../../../../webroot/site/src/images/backgrounds/catalogo-produtos.svg), rgba($black, 0.5);
+        background-blend-mode: soft-light;
+        background-position: 75% 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: blur(3px);
+        z-index: -1;
+    }*/
+  }
+  .catalogo-produtos .container {
+    background-position: 80%;
+  }
   .catalogo-produtos .div-titulo img {
     margin-left: -10px !important;
     width: 40% !important;
@@ -2183,7 +2220,8 @@ html {
     justify-content: center;
     padding-left: 0px !important;
   }
-  .catalogo-produtos .div-buttons button {
+  .catalogo-produtos .div-buttons .button1,
+.catalogo-produtos .div-buttons .button2 {
     margin-top: -10px !important;
     margin-left: 0px !important;
     padding: 10px 22px !important;
@@ -2333,6 +2371,13 @@ html {
   .cards .container .cards-conteudo {
     margin: 20px 49px;
   }
+  .cards .container .cards-conteudo {
+    transition: margin-top 0.3s ease-in-out 0s;
+    margin-top: 0px;
+  }
+  .cards .container .cards-conteudo:hover {
+    margin-top: -30px;
+  }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .cards .container {
@@ -2340,6 +2385,13 @@ html {
   }
   .cards .container .cards-conteudo {
     margin: 20px 83px;
+  }
+  .cards .container .cards-conteudo {
+    transition: margin-top 0.3s ease-in-out 0s;
+    margin-top: 0px;
+  }
+  .cards .container .cards-conteudo:hover {
+    margin-top: -30px;
   }
 }
 @media (min-width: 776px) and (max-width: 992px) {
@@ -2349,6 +2401,13 @@ html {
   .cards .container .cards-conteudo {
     margin: 20px 125px;
   }
+  .cards .container .cards-conteudo {
+    transition: margin-top 0.3s ease-in-out 0s;
+    margin-top: 0px;
+  }
+  .cards .container .cards-conteudo:hover {
+    margin-top: -30px;
+  }
 }
 @media (min-width: 567px) and (max-width: 776px) {
   .cards .container {
@@ -2356,6 +2415,13 @@ html {
   }
   .cards .container .cards-conteudo {
     margin: 20px 90px;
+  }
+  .cards .container .cards-conteudo {
+    transition: margin-top 0.3s ease-in-out 0s;
+    margin-top: 0px;
+  }
+  .cards .container .cards-conteudo:hover {
+    margin-top: -30px;
   }
 }
 @media (min-width: 0px) and (max-width: 567px) {
@@ -2424,6 +2490,11 @@ html {
 }
 .header-wrapper .links img {
   margin-top: 5px;
+}
+@media (max-width: 576px) {
+  .header-wrapper .links img {
+    margin-top: 9px;
+  }
 }
 .header-wrapper .links .p1 {
   text-decoration: none;

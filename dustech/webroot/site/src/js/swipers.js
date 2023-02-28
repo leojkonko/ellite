@@ -13,6 +13,7 @@ var swiper = new Swiper(".produtos-destaque-swiper", {
     },
     pagination: {
         el: ".produtos-destaque-swiper .swiper-pagination",
+        clickable: true
     },
     breakpoints: {
         992: {
@@ -30,6 +31,7 @@ var swiper = new Swiper("mySwiper-diferenciais", {
     slidesPerView: 1,
     pagination: {
         el: "mySwiper-diferenciais .swiper-pagination",
+        clickable: true,
     },
     breakpoints: {
         992: {
@@ -128,5 +130,6 @@ var swiper = new Swiper(".produtos-relacionados-swiper", {
 var swiper = new Swiper(".mySwiper-empresa", {
     pagination: {
         el: ".mySwiper-empresa .swiper-pagination",
+        clickable: true
     },
 });

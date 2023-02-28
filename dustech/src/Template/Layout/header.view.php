@@ -346,7 +346,7 @@
                                     </div>
                                     <div class="col-6 d-flex justify-content-end links">
                                         <a href="" class="p1">Home</a>
-                                        <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" class="mx-0-50  d-flex" width="5px" alt="">
+                                        <img src="<?= asset('/images/icones/seta-lateral.svg') ?>" class="mx-0-50 mb-1 d-flex" width="5px" alt="">
                                          <a href="" class="p2">Blog Detalhe</a>
                                     </div>
                                 </div>

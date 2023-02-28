@@ -88,30 +88,29 @@
                                 </button>
 
                                     <!-- Modal -->
-                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title text-dark" id="exampleModalLabel">Fale Conosco!</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
-                                        </div>
-                                        <div class="modal-body py-2">
-                                            <form action="">
-                                                <input type="text" placeholder="Nome *" class="w-100 mt-1">
-                                                <input type="email" placeholder="Email *" class="w-100 mt-1">
-                                                <input type="number" placeholder="Número *" class="w-100 mt-1">
-                                                <input type="text" placeholder="Endereço *" class="w-100 mt-1">
-                                            </form>
-                                        </div>
-                                        <div class="modal-footer">
-            
-                                            <button type="button" class="btn btn-custom">
-                                                Enviar
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-dark" id="exampleModalLabel">Fale Conosco!</h5>
+                        
+                    </div>
+                    <div class="modal-body py-2">
+                        <form action="">
+                            <input type="text" placeholder="Nome *" class="w-100 mt-1">
+                            <input type="email" placeholder="Email *" class="w-100 mt-1">
+                            <input type="number" placeholder="Número de Telefone*" class="w-100 mt-1 mask-telefone">
+                            <input type="text" placeholder="Endereço *" class="w-100 mt-1">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-custom">
+                            Enviar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
                                 <!-- Modal -->
                                 
                             </div>

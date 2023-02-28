@@ -50,7 +50,7 @@
                         <form action="">
                             <input type="text" placeholder="Nome *" class="w-100 mt-1">
                             <input type="email" placeholder="Email *" class="w-100 mt-1">
-                            <input type="number" placeholder="Número *" class="w-100 mt-1">
+                            <input type="number" placeholder="Número de Telefone*" class="w-100 mt-1 mask-telefone">
                             <textarea name="" id="" Placeholder="Mensagem" class="w-100 mt-1" cols="30" rows="10"></textarea>
                         </form>
                     </div>

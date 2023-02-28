@@ -178,6 +178,16 @@ $breakpoint-xl: 1200px;
     header {
         position: absolute !important;
     }
+
+    .header-wrapper {
+        & .links {
+            margin-top: -7px;
+
+            & .img {
+                //margin-top: 9px !important;
+            }
+        }
+    }
 }
 
 @media (min-width: 992px)and(max-width: 1200px) {
