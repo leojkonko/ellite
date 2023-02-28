@@ -148,8 +148,8 @@
                         <input type="text" class="form-control text-light" placeholder="Digite o código">
                     </div>
                     <div class="col-lg-12 mt-1 buttons">
-                        <button class="btn btn-light text-dark button-cor"><a href="<?= url('produtos') ?>" class="solida">Cor sólida</a></button>
-                        <button class="btn  btn-outline-light button-cor"><a href="<?= url('produtos') ?>" class="metalica">Cor metálica</a></button>
+                        <button class="btn btn-light text-dark button-cor b1"><a href="<?= url('produtos') ?>" class="solida">Cor sólida</a></button>
+                        <button class="btn  btn-outline-light button-cor b2"><a href="<?= url('produtos') ?>" class="metalica">Cor metálica</a></button>
                         <button class="btn btn-custom"><img
                                 src="<?= asset('/images/icones/lupa-pequena.svg') ?>" width="16px"
                                 alt=""></button>

@@ -4284,6 +4284,18 @@ textarea.form-control-lg {
 .offcanvas-end ul .buttons {
   display: flex;
 }
+.offcanvas-end ul .buttons .b1:hover {
+  background-color: transparent !important;
+}
+.offcanvas-end ul .buttons .b1:hover .solida {
+  color: white;
+}
+.offcanvas-end ul .buttons .b2:hover {
+  background-color: white !important;
+}
+.offcanvas-end ul .buttons .b2:hover .metalica {
+  color: black;
+}
 .offcanvas-end ul .buttons .button-cor {
   margin-right: 10px;
   font-size: 12px;

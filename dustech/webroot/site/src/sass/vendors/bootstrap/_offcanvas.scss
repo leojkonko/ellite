@@ -128,6 +128,26 @@
     & .buttons {
       display: flex;
 
+      & .b1 {
+        &:hover {
+          background-color: transparent !important;
+
+          & .solida {
+            color: white;
+          }
+        }
+      }
+
+      & .b2 {
+        &:hover {
+          background-color: white !important;
+
+          & .metalica {
+            color: black;
+          }
+        }
+      }
+
       & .button-cor {
         @include media-breakpoint-between(350px, 400px) {
 
@@ -139,9 +159,11 @@
           color: black;
         }
 
+
         & .metalica {
           color: white;
         }
+
 
         margin-right: 23px;
         font-size: 14px;
