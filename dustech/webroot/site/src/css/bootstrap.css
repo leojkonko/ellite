@@ -3544,6 +3544,9 @@ textarea.form-control-lg {
   background-color: #0d6efd;
   border-color: #0d6efd;
 }
+.page-item.active .page-link a {
+  color: white;
+}
 .page-item.disabled .page-link {
   color: #6c757d;
   pointer-events: none;
@@ -3823,6 +3826,10 @@ textarea.form-control-lg {
   outline: 0;
 }
 
+.catalogo .modal .btn-close,
+.catalogo-produtos .modal .btn-close {
+  margin-bottom: 10px;
+}
 .catalogo .modal form input,
 .catalogo .modal form textarea,
 .catalogo-produtos .modal form input,

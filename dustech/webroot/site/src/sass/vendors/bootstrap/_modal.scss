@@ -26,7 +26,11 @@
 .catalogo,
 .catalogo-produtos {
   & .modal {
+
     //top: 150px !important;
+    & .btn-close {
+      margin-bottom: 10px;
+    }
 
     & form {
 

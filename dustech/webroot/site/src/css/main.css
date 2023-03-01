@@ -994,6 +994,7 @@ html {
 .pagination .active .page-link {
   background-color: #c44438 !important;
   border-color: #c44438 !important;
+  color: white !important;
 }
 
 @media (max-width: 575.98px) {
